@@ -1,9 +1,8 @@
 //  icons
 import {
-  FiYoutube,
+  FiLinkedin,
   FiInstagram,
   FiGithub,
-  FiDribbble,
   FiLayout,
   FiSettings,
   FiPenTool,
@@ -36,6 +35,14 @@ import SkillImg5 from './assets/img/skills/nextjs.png';
 import SkillImg6 from './assets/img/skills/nodejs.png';
 import SkillImg7 from './assets/img/skills/git.png';
 import SkillImg8 from './assets/img/skills/figma.png';
+import SkillImg9 from './assets/img/skills/sequelize.png';
+import SkillImg10 from './assets/img/skills/express.png';
+import SkillImg11 from './assets/img/skills/tailwindcss.svg';
+import SkillImg12 from './assets/img/skills/postgres.png';
+import SkillImg13 from './assets/img/skills/sqlite.png';
+import SkillImg14 from './assets/img/skills/visual.png';
+import SkillImg15 from './assets/img/skills/redux.png';
+import SkillImg16 from './assets/img/skills/typescript.png';
 
 // testimonial images
 import TestiImage1 from './assets/img/testimonials/testimonial-1.webp';
@@ -73,11 +80,7 @@ export const navigation = [
 // social
 export const social = [
   {
-    icon: <FiYoutube />,
-    href: '',
-  },
-  {
-    icon: <FiInstagram />,
+    icon: <FiLinkedin />,
     href: '',
   },
   {
@@ -85,9 +88,13 @@ export const social = [
     href: '',
   },
   {
-    icon: <FiDribbble />,
+    icon: <FiInstagram />,
     href: '',
   },
+  // {
+  //   icon: <FiDribbble />,
+  //   href: '',
+  // },
 ];
 
 // companies
@@ -195,6 +202,30 @@ export const skills = [
   },
   {
     image: SkillImg8,
+  },
+  {
+    image: SkillImg9,
+  },
+  {
+    image: SkillImg10,
+  },
+  {
+    image: SkillImg11,
+  },
+  {
+    image: SkillImg12,
+  },
+  {
+    image: SkillImg13,
+  },
+  {
+    image: SkillImg14,
+  },
+  {
+    image: SkillImg15,
+  },
+  {
+    image: SkillImg16,
   },
 ];
 
