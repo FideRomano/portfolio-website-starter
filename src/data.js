@@ -178,54 +178,94 @@ export const projectsNav = [
 ];
 
 // skill
-export const skills = [
+export const skillsFront = [
   {
     image: SkillImg1,
+    name: "HTML",
+    type: "front"
   },
   {
     image: SkillImg2,
-  },
-  {
-    image: SkillImg3,
+    name: "CSS",
+    type: "front"
   },
   {
     image: SkillImg4,
+    name: "React",
+    type: "front"
   },
   {
     image: SkillImg5,
-  },
-  {
-    image: SkillImg6,
-  },
-  {
-    image: SkillImg7,
+    name: "Next JS",
+    type: "front"
+
   },
   {
     image: SkillImg8,
-  },
-  {
-    image: SkillImg9,
-  },
-  {
-    image: SkillImg10,
+    name: "Figma",
+    type: "front"
   },
   {
     image: SkillImg11,
-  },
-  {
-    image: SkillImg12,
-  },
-  {
-    image: SkillImg13,
-  },
-  {
-    image: SkillImg14,
+    name: "TailwindCSS",
+    type: "front"
   },
   {
     image: SkillImg15,
+    name: "Redux",
+    type: "front"
+  },
+];
+
+export const skillsBack = [
+  {
+    image: SkillImg6,
+    name: "Node JS",
+    type: "back"
+  },
+  {
+    image: SkillImg9,
+    name: "Sequelize",
+    type: "back"
+  },
+  {
+    image: SkillImg10,
+    name: "Express",
+    type: "back"
+  },
+  {
+    image: SkillImg12,
+    name: "PostgreSQL",
+    type: "back"
+  },
+  {
+    image: SkillImg13,
+    name: "SQLite",
+    type: "back"
+  },
+];
+
+export const skillsOther = [
+  
+  {
+    image: SkillImg3,
+    name: "JavaScript",
+    type: "other"
+  },
+  {
+    image: SkillImg7,
+    name: "Git",
+    type: "other"
+  },
+  {
+    image: SkillImg14,
+    name: "VSCode",
+    type: "other"
   },
   {
     image: SkillImg16,
+    name: "TypeScript",
+    type: "other"
   },
 ];
 

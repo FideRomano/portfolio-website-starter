@@ -1,25 +1,89 @@
 import React from "react";
 
 // import skills data
-import {skills} from '../data'
+import { skillsFront, skillsBack, skillsOther } from "../data";
 
 // import style from module css
-import style from './Skills.module.css'
 
 const Skills = () => {
-  return <section className='bg-tertiary py-12'>
-    <div className='container mx-auto'>
-        <div className='grid grid-cols-8 md:grid-flow-row'>
-            {skills.map((skill,index)=>{
-                return(
-                    <div className='flex items-center justify-center' key={index}>
-                        <img className={style.img} src={skill.image} alt="" />
-                    </div>
-                )
+  return (
+    <section className="bg-tertiary py-12">
+      <div className="container mx-auto ">
+        <h1 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-10">
+          Skills
+        </h1>
+        <div className="rounded-lg bg-secondary mb-5 pt-4 pb-4">
+          <h1 className="text-lg ml-5 mb-3">Front end</h1>
+          <div className="grid grid-cols-8 md:grid-flow-row  ">
+            {skillsFront.map((skill, index) => {
+              return (
+                <div
+                  className="group flex items-center justify-center relative"
+                  key={index}
+                >
+                  <img
+                    className="cursor-pointer w-24 transition-all duration-100 ease-linear transform group-hover:scale-110"
+                    src={skill.image}
+                    alt=""
+                  />
+
+                  <span className="text-sm text-center text-white  bg-tertiary absolute top-1 opacity-0 lg:group-hover:opacity-100 md:text-lg px-2 rounded animate-bounce">
+                    {skill.name}
+                  </span>
+                </div>
+              );
             })}
+          </div>
         </div>
-    </div>
-  </section>
+        <div className="rounded-lg bg-secondary mb-5 pt-4 pb-4">
+          <h1 className="text-lg ml-5 mb-3">Back end</h1>
+          <div className="grid grid-cols-8 md:grid-flow-row  ">
+            {skillsBack.map((skill, index) => {
+              return (
+                <div
+                  className="group flex items-center justify-center relative"
+                  key={index}
+                >
+                  <img
+                    className="cursor-pointer w-24 transition-all duration-100 ease-linear transform group-hover:scale-110"
+                    src={skill.image}
+                    alt=""
+                  />
+
+                  <span className="text-sm text-center text-white  bg-tertiary absolute top-1 opacity-0 lg:group-hover:opacity-100 md:text-lg px-2 rounded animate-bounce">
+                    {skill.name}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="rounded-lg bg-secondary mb-5 pt-4 pb-4">
+          <h1 className="text-lg ml-5 mb-3">Programming Languages & tools</h1>
+          <div className="grid grid-cols-8 md:grid-flow-row  ">
+            {skillsOther.map((skill, index) => {
+              return (
+                <div
+                  className="group flex items-center justify-center relative"
+                  key={index}
+                >
+                  <img
+                    className="cursor-pointer w-24 transition-all duration-100 ease-linear transform group-hover:scale-110"
+                    src={skill.image}
+                    alt=""
+                  />
+
+                  <span className="text-sm text-center text-white bg-tertiary absolute top-1 opacity-0 lg:group-hover:opacity-100 md:text-lg px-2 rounded animate-bounce">
+                    {skill.name}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Skills;

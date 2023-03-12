@@ -1,8 +1,0 @@
-.img{
-    cursor: pointer;
-    width: 96px;
-    transition: all .1s linear;
-}
-.img:hover{
-    transform: scale(1.15);
-}
