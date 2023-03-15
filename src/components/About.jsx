@@ -2,20 +2,33 @@ import React from "react";
 
 // import image
 import Image from "../assets/img/foto-cv2-sin-fondo-pelo-degrade.png";
+import { windowDimensions } from "./WindowsDimentions";
 
 const About = () => {
+  const height = windowDimensions.windowHeight - windowDimensions.navScrolled;
+  console.log(windowDimensions.windowHeight);
+  console.log(windowDimensions.navScrolled);
+  console.log(height);
   return (
-    <section className="section bg-secondary">
+    <section
+      style={{
+        minHeight: `${
+          windowDimensions.windowHeight - windowDimensions.navHeight
+        }px`,
+      }}
+      className="section bg-secondary flex items-center"
+      id="about"
+    >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-24">
           <img
-            className='object-cover h-full w-[486px] md:mx-auto lg:mx-0 rounded-3xl bg-tertiary'
+            className="object-cover h-full w-[486px] md:mx-auto lg:mx-0 rounded-3xl bg-tertiary"
             src={Image}
             alt=""
           />
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="flex flex-col">
-              <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before::opacity-40 before:-top-[2rem] before:hidden before:lg:block">
+              <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before::opacity-40 xl:mt-[2.5rem] before:-top-[2rem] before:hidden before:lg:block">
                 Fidel Romano
               </h2>
               <p className="mb-4 text-accent">Freelance Web Developer</p>
@@ -23,13 +36,19 @@ const About = () => {
               <p className="mb-8">
                 Soy Desarrollador de Software Full Stack con experiencia en la
                 creación de aplicaciones web eficientes y escalables,
-                desarrolladas en el stack PERN con React, Redux, PostgreSQL,
-                Express, Node js, HTML, CSS, Express, JavaScript y Sequelize.
+                desarrolladas en el stack PERN. Trabajo con React, Redux,
+                PostgreSQL, Express, Node js, HTML, CSS, Express, JavaScript y
+                Sequelize.
+                <br />
+                <br />
                 Cuento con cualidades de trabajo en equipo y de comunicación
                 efectiva, apoyandome en el uso de metodologias agiles, lo cual
                 me convierte en un profesional organizado y eficaz.
               </p>
             </div>
+            <button className="btn btn-md bg-accent hover:bg-accent-hover md-btn-lg">
+              Trabaja conmigo
+            </button>
           </div>
         </div>
       </div>

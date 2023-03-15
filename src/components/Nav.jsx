@@ -6,6 +6,9 @@ import { navigation } from "../data";
 // import link
 import { Link } from "react-scroll";
 
+import { windowDimensions } from "./WindowsDimentions";
+
+
 const Nav = () => {
   return <nav>
       <ul className='flex space-x-8 capitalize text-[15px]'>
@@ -21,7 +24,7 @@ const Nav = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-70}
+                offset={-windowDimensions.navScrolled}
               className='transition-all duration-300'>
                 {item.name}
               </Link>

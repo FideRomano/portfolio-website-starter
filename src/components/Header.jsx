@@ -4,9 +4,13 @@ import React, { useState, useEffect } from "react";
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import Socials from "./Socials";
+import { windowDimensions } from "./WindowsDimentions";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
+  const scrolled = windowDimensions.navScrolled
+  const nav = windowDimensions.navHeight
+  console.log(scrolled);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -15,8 +19,9 @@ const Header = () => {
   });
   return (
     <header
+    style={bg? {minHeight:`${scrolled}px`} : {minHeight:`${nav}px`}}
       className={`${
-        bg ? "bg-tertiary h-20" : "h-24"
+        bg ? "bg-tertiary" : "bg-none"
       } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">

@@ -60,6 +60,10 @@ export const navigation = [
     href: 'about',
   },
   {
+    name: 'skills',
+    href: 'skills',
+  },
+  {
     name: 'portfolio',
     href: 'portfolio',
   },

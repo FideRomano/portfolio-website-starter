@@ -3,10 +3,14 @@ import React from "react";
 // import woman image
 import LottieAnimation from "./Lottie";
 
+import { windowDimensions } from "./WindowsDimentions";
+
+
 const Hero = () => {
   return (
     <section
       id="home"
+      style={{minHeight: `${windowDimensions.windowHeight-windowDimensions.navHeight}px`}}
       className="lg:h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
     >
       <div className="container mx-auto h-full">
@@ -14,7 +18,7 @@ const Hero = () => {
           {/* left side */}
           <div className="flex-1 flex flex-col items-center lg:items-start">
             <p className="text-lg text-accent mb-[22px]">Hola! Soy Fidel</p>
-            <h1 className="text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
+            <h1 className="text-4xl text-center leading-[44px] md:text-5xl lg:text-left md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
               Full stack <br />
               Web Developer
             </h1>
