@@ -6,8 +6,9 @@ import { skillsFront, skillsBack, skillsOther } from "../data";
 import { windowDimensions } from "./WindowsDimentions";
 
 const Skills = () => {
+  const diference = windowDimensions.windowHeight - windowDimensions.navScrolled
   return (
-    <section style={{minHeight: windowDimensions.windowHeight}} className="bg-tertiary h-[92vh] flex items-center" id='skills'>
+    <section style={{minHeight: diference}} className="bg-tertiary flex items-center" id='skills'>
       <div className="container mx-auto  ">
         <h1 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-10">
           Skills
