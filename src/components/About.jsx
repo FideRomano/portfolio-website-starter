@@ -18,8 +18,8 @@ const diference = windowDimensions.windowHeight - windowDimensions.navScrolled
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-24">
-          <img
-            className="object-cover w-[486px] xl:w-[360px] md:mx-auto lg:mx-0 rounded-3xl bg-tertiary"
+          <img style={{height: `${windowDimensions.windowHeight/1.7}px`}}
+            className="object-cover md:mx-auto lg:mx-0 rounded-3xl bg-tertiary"
             src={Image}
             alt=""
           />
