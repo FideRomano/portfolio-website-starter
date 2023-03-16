@@ -19,7 +19,7 @@ import BehanceBrandIcon from './assets/img/brands/behance.png';
 import DribbbleBrandIcon from './assets/img/brands/dribbble.png';
 
 // projects images
-import Project1 from './assets/img/projects/p1.webp';
+import Project1 from './assets/img/projects/p1.png';
 import Project2 from './assets/img/projects/p2.webp';
 import Project3 from './assets/img/projects/p3.webp';
 import Project4 from './assets/img/projects/p4.webp';

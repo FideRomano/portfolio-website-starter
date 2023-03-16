@@ -5,12 +5,14 @@ import Image from "../assets/img/foto-cv2-sin-fondo-pelo-degrade.png";
 import { windowDimensions } from "./WindowsDimentions";
 
 const About = () => {
-const diference = windowDimensions.windowHeight - windowDimensions.navScrolled
+console.log(windowDimensions.navHeight);
+console.log(windowDimensions.windowHeight);
+console.log(windowDimensions.windowHeight - windowDimensions.navHeight);
   return (
     <section
       style={{
         minHeight: `${
-          diference
+          windowDimensions.windowHeight - windowDimensions.navHeight
         }px`,
       }}
       className="section bg-secondary flex items-center"
@@ -18,8 +20,8 @@ const diference = windowDimensions.windowHeight - windowDimensions.navScrolled
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-24">
-          <img style={{height: `${windowDimensions.windowHeight/1.7}px`}}
-            className="object-cover md:mx-auto lg:mx-0 rounded-3xl bg-tertiary"
+          <img
+            className="object-cover h-full w-[486px] md:mx-auto lg:mx-0 rounded-3xl bg-tertiary"
             src={Image}
             alt=""
           />

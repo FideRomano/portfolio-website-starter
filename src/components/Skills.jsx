@@ -9,7 +9,7 @@ const Skills = () => {
   const diference = windowDimensions.windowHeight - windowDimensions.navScrolled
   return (
     <section style={{minHeight: diference}} className="bg-tertiary flex items-center" id='skills'>
-      <div className="container mx-auto  ">
+      <div className="container mx-auto">
         <h1 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-10">
           Skills
         </h1>
@@ -19,7 +19,7 @@ const Skills = () => {
             {skillsFront.map((skill, index) => {
               return (
                 <div
-                  className="group flex items-center justify-center relative"
+                  className="group flex items-center justify-center relative "
                   key={index}
                 >
                   <img
