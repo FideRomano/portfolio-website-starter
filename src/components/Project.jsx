@@ -8,9 +8,16 @@ const Project = ({ item }) => {
     >
       <div className="lg:max-w-[45%] border-x-4 border-y-[15px] border-gray-200 rounded-2xl cursor-pointer relative group">
         <a href={item.href} target="_blank" rel="noreferrer">
-
-        <img src={item.image} alt="" className="rounded-2xl transition-all duration-150 lg:group-hover:blur-sm lg:group-hover:opacity-75" />
-        <h1 className='absolute opacity-0 lg:group-hover:opacity-100 transition-opacity duration-400 text-4xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>Visitar sitio web</h1>
+          <img
+            src={item.image}
+            alt=""
+            className="rounded-2xl transition-all duration-150 lg:group-hover:blur-sm lg:group-hover:opacity-60"
+          />
+          {item.description !== "Proximamente" && (
+            <h1 className="absolute opacity-0 lg:group-hover:opacity-100 transition-opacity duration-400 text-2xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              Visitar sitio web
+            </h1>
+          )}
         </a>
       </div>
 
@@ -18,6 +25,20 @@ const Project = ({ item }) => {
         <h3 className="text-2xl font-semibold capitalize mb-3">{item.name}</h3>
         <p className="capitalize text-accent text-sm mb-3">{item.category}</p>
         <p className="text-sm">{item.description}</p>
+        <div className="flex justify-center items-center mt-10">
+          {item.links?.map((link, index) => {
+            return (
+              <a href={link.href} target="_blank" rel="noreferrer">
+                <button
+                  key={index}
+                  className="appearance-none bg-transparent border border-gray-100 box-border text-gray-100 cursor-pointer inline-block font-Roobert font-medium text-base leading-normal my-0 mx-[20px] min-h-12 min-w-0 outline-none px-5 py-4 text-center no-underline transition-all duration-300 ease-cubic-bezier will-change-transform hover:text-primary hover:bg-gray-100 hover:shadow-md active:shadow-none active:translate-y-0 rounded-lg"
+                >
+                  {link.icon}
+                </button>
+              </a>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
