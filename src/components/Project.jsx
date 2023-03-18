@@ -1,4 +1,5 @@
 import React from "react";
+import Hamster from "./Hamster/Hamster";
 
 const Project = ({ item }) => {
   return (
@@ -8,10 +9,11 @@ const Project = ({ item }) => {
     >
       <div className="lg:max-w-[45%] border-x-4 border-y-[15px] border-gray-200 rounded-2xl cursor-pointer relative group">
         <a href={item.href} target="_blank" rel="noreferrer">
+          {item.description === "Proximamente" && <Hamster />}
           <img
             src={item.image}
             alt=""
-            className="rounded-2xl transition-all duration-150 lg:group-hover:blur-sm lg:group-hover:opacity-60"
+            className={item.description !== "Proximamente" &&"rounded-2xl transition-all duration-150 lg:group-hover:blur-sm lg:group-hover:opacity-60"}
           />
           {item.description !== "Proximamente" && (
             <h1 className="absolute opacity-0 lg:group-hover:opacity-100 transition-opacity duration-400 text-2xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

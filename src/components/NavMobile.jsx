@@ -46,11 +46,11 @@ const NavMobile = () => {
   };
 
   return (
-    <nav className="relative">
+    <nav className="relative ">
       {/* menu icon */}
       <div
         onClick={() => setIsOpen(true)}
-        className="cursor-pointer text-white"
+        className="cursor-pointer text-white "
       >
         <MenuAlt3Icon className="w-8 h-8" />
       </div>
@@ -80,7 +80,7 @@ const NavMobile = () => {
         </div>
         {navigation.map((item, index) => {
           return (
-            <li key={index} className="mb-8" >
+            <li key={index} className="mb-8">
               <Link
                 to={item.href}
                 smooth={true}
@@ -94,11 +94,10 @@ const NavMobile = () => {
             </li>
           );
         })}
-              <div className='flex h-44 w-content lg:hidden'>
-        <Socials/>
-      </div>
+        <div className="flex w-content lg:hidden border mt-[50px]">
+          <Socials />
+        </div>
       </motion.ul>
-      
     </nav>
   );
 };
