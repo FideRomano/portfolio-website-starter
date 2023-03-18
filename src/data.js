@@ -19,9 +19,9 @@ import BehanceBrandIcon from './assets/img/brands/behance.png';
 import DribbbleBrandIcon from './assets/img/brands/dribbble.png';
 
 // projects images
-import Project1 from './assets/img/projects/p1.png';
-import Project2 from './assets/img/projects/p2.webp';
-import Project3 from './assets/img/projects/p3.webp';
+import GameFindeX from './assets/img/projects/p1.png';
+import FlexAGENDA from './assets/img/projects/p2.png';
+import loading from './assets/img/projects/loading.jpg';
 import Project4 from './assets/img/projects/p4.webp';
 import Project5 from './assets/img/projects/p5.webp';
 import Project6 from './assets/img/projects/p6.webp';
@@ -43,6 +43,7 @@ import SkillImg13 from './assets/img/skills/sqlite.png';
 import SkillImg14 from './assets/img/skills/visual.png';
 import SkillImg15 from './assets/img/skills/redux.png';
 import SkillImg16 from './assets/img/skills/typescript.png';
+import SkillImg17 from './assets/img/skills/firebase.png';
 
 // testimonial images
 import TestiImage1 from './assets/img/testimonials/testimonial-1.webp';
@@ -129,39 +130,27 @@ export const brands = [
 export const projectsData = [
   {
     id: '1',
-    image: Project1,
-    name: 'project name 1',
-    category: 'UI/UX design',
+    image: GameFindeX,
+    name: 'GameFindeX',
+    category: 'individual',
+    description: 'El objetivo es una SPA con todos los conocimientos aprendidos en el Bootcamp de Henry. Esta SPA consume informacion de una API externa, para hacer funcionalidades como buscar juegos, paginado, detalle de cada juego, filtros combinados con ordenamiento, y tambien tener la posibilidad de añadir un juego a la lista',
+    href: "https://pi-videogames-gamma-lyart.vercel.app/",
   },
   {
     id: '2',
-    image: Project2,
-    name: 'project name 2',
-    category: 'web development',
+    image: FlexAGENDA,
+    name: 'FlexAGENDA',
+    category: 'grupal',
+    description: 'FlexAGENDA es una agenda virtual para profesionales. Es un sitio web diseñado para la gestion de turnos y manejo de clientes.  Ofrece un calendario interactivo con filtros, borrado lógico, pasarela de pagos, autenticación, entre otras tecnologías de desarrollo web.',
+    href: "https://flex-agenda.vercel.app/",
   },
   {
     id: '3',
-    image: Project3,
-    name: 'project name 3',
-    category: 'UI/UX design',
-  },
-  {
-    id: '4',
-    image: Project4,
-    name: 'project name 4',
-    category: 'branding',
-  },
-  {
-    id: '5',
-    image: Project5,
-    name: 'project name 5',
-    category: 'web development',
-  },
-  {
-    id: '6',
-    image: Project6,
-    name: 'project name 6',
-    category: 'web development',
+    image: loading,
+    name: 'Netflix clon',
+    category: 'individual',
+    description: "Proximamente",
+    href: "",
   },
 ];
 
@@ -171,10 +160,10 @@ export const projectsNav = [
     name: 'all',
   },
   {
-    name: 'UI/UX Design',
+    name: 'grupal',
   },
   {
-    name: 'web development',
+    name: 'individual',
   },
   {
     name: 'branding',
@@ -245,6 +234,11 @@ export const skillsBack = [
   {
     image: SkillImg13,
     name: "SQLite",
+    type: "back"
+  },
+  {
+    image: SkillImg17,
+    name: "Firebase",
     type: "back"
   },
 ];

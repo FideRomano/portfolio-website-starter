@@ -94,7 +94,11 @@ const NavMobile = () => {
             </li>
           );
         })}
+              <div className='flex h-44 w-content lg:hidden'>
+        <Socials/>
+      </div>
       </motion.ul>
+      
     </nav>
   );
 };

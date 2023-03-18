@@ -1,5 +1,5 @@
 import React from "react";
-import Brands from "./Brands";
+import Socials from "./Socials";
 
 // import woman image
 import LottieAnimation from "./Lottie";
@@ -12,8 +12,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      style={{minHeight: `${vh}px`}}
-      className="flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat overflow-hidden"
+      style={{minHeight: window.innerWidth > 640 ? `${vh}px` : 'auto'}}      className="flex h-[85vh] items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat overflow-hidden"
     >
       <div className="container mx-auto h-full">
         <div className="flex items-center h-full pt-8">
@@ -37,7 +36,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* <div className='border border-white h-4 w-4'></div> */}
     </section>
   );
 };

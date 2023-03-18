@@ -1,6 +1,9 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    duration: {
+      '400': '400ms',
+    },
     minHeight: {
       '0': '0',
       '1/4': '25%',
