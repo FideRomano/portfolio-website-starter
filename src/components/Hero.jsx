@@ -6,6 +6,9 @@ import LottieAnimation from "./Lottie";
 
 import { windowDimensions } from "./WindowsDimentions";
 
+import { Link } from "react-scroll";
+
+
 
 const Hero = () => {
   const vh = windowDimensions.windowHeight - windowDimensions.navHeight
@@ -26,9 +29,19 @@ const Hero = () => {
             <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left">
               Desarrollo de aplicaciones eficientes y escalables.
             </p>
+            <Link
+                to='contact'
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-windowDimensions.navScrolled}
+                className="transition-all duration-300"
+              >
             <button className="btn btn-md bg-accent hover:bg-accent-hover md-btn-lg">
               Trabaja conmigo
             </button>
+              </Link>
           </div>
           {/* right side */}
           <div className='hidden lg:flex flex-1 justify-end items-center h-full opacity-90' >

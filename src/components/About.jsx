@@ -3,6 +3,8 @@ import React from "react";
 // import image
 import Image from "../assets/img/foto-cv2-sin-fondo-pelo-degrade.png";
 import { windowDimensions } from "./WindowsDimentions";
+import { Link } from "react-scroll";
+
 
 const About = () => {
 const vh = windowDimensions.windowHeight - windowDimensions.navScrolled
@@ -44,9 +46,19 @@ const vh = windowDimensions.windowHeight - windowDimensions.navScrolled
                 me convierte en un profesional organizado y eficaz.
               </p>
             </div>
+            <Link
+                to='contact'
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-windowDimensions.navScrolled}
+                className="transition-all duration-300"
+              >
             <button className="btn btn-md bg-accent hover:bg-accent-hover md-btn-lg">
               Trabaja conmigo
             </button>
+              </Link>
           </div>
         </div>
       </div>

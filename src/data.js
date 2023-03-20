@@ -196,36 +196,43 @@ export const skillsFront = [
     image: SkillImg1,
     name: "HTML",
     type: "front",
+    href: "https://html.spec.whatwg.org/multipage/"
   },
   {
     image: SkillImg2,
     name: "CSS",
     type: "front",
+    href: "https://www.w3schools.com/css/"
   },
   {
     image: SkillImg4,
     name: "React",
     type: "front",
+    href: "https://es.reactjs.org/"
   },
   {
     image: SkillImg5,
     name: "Next JS",
     type: "front",
+    href: "https://nextjs.org/"
   },
   {
     image: SkillImg8,
     name: "Figma",
     type: "front",
+    href: "https://www.figma.com/"
   },
   {
     image: SkillImg11,
     name: "TailwindCSS",
     type: "front",
+    href: "https://tailwindcss.com/"
   },
   {
     image: SkillImg15,
     name: "Redux",
     type: "front",
+    href: "https://redux.js.org/"
   },
 ];
 
@@ -234,31 +241,37 @@ export const skillsBack = [
     image: SkillImg6,
     name: "Node JS",
     type: "back",
+    href: "https://nodejs.org/en"
   },
   {
     image: SkillImg9,
     name: "Sequelize",
     type: "back",
+    href: "https://sequelize.org/"
   },
   {
     image: SkillImg10,
     name: "Express",
     type: "back",
+    href: "https://expressjs.com/es/"
   },
   {
     image: SkillImg12,
     name: "PostgreSQL",
     type: "back",
+    href: "https://www.postgresql.org/"
   },
   {
     image: SkillImg13,
     name: "SQLite",
     type: "back",
+    href: "https://sqlite.org/index.html"
   },
   {
     image: SkillImg17,
     name: "Firebase",
     type: "back",
+    href: "https://firebase.google.com/?gclid=CjwKCAjwiOCgBhAgEiwAjv5whJsyc4xHCk_rKEJnSYU4uUnFNu7gArtSqn6K_UbAd8mT1WNmVAQ4rBoCHJQQAvD_BwE&gclsrc=aw.ds&hl=es-419"
   },
 ];
 
@@ -267,21 +280,25 @@ export const skillsOther = [
     image: SkillImg3,
     name: "JavaScript",
     type: "other",
+    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   },
   {
     image: SkillImg7,
     name: "Git",
     type: "other",
-  },
-  {
-    image: SkillImg14,
-    name: "VSCode",
-    type: "other",
+    href: "https://git-scm.com/"
   },
   {
     image: SkillImg16,
     name: "TypeScript",
     type: "other",
+    href: "https://www.typescriptlang.org/"
+  },
+  {
+    image: SkillImg14,
+    name: "VSCode",
+    type: "other",
+    href: "https://code.visualstudio.com/"
   },
 ];
 
@@ -342,14 +359,14 @@ export const testimonials = [
 export const contact = [
   {
     icon: <FiMail />,
-    title: "Have a question?",
-    subtitle: "I am here to help you.",
-    description: "Email me at hello@youremail.com",
+    title: "¿Quieres hacerme una pregunta?",
+    subtitle: "Estoy aqui para ayudarte!",
+    description: "Enviame un email a fidel.romano.2021@gmail.com",
   },
   {
     icon: <FiMapPin />,
-    title: "Current Location",
-    subtitle: "Bucharest, Romania",
-    description: "Serving clients worldwide",
+    title: "Ubicacion actual",
+    subtitle: "Buenos Aires, Argentina",
+    description: "Trabajo en remoto!",
   },
 ];
