@@ -66,14 +66,14 @@ export const navigation = [
     name: "portfolio",
     href: "portfolio",
   },
-  {
-    name: "services",
-    href: "services",
-  },
-  {
-    name: "testimonials",
-    href: "testimonials",
-  },
+  // {
+  //   name: "services",
+  //   href: "services",
+  // },
+  // {
+  //   name: "testimonials",
+  //   href: "testimonials",
+  // },
   {
     name: "contact",
     href: "contact",
@@ -84,15 +84,15 @@ export const navigation = [
 export const social = [
   {
     icon: <FiLinkedin />,
-    href: "",
+    href: "https://www.linkedin.com/in/fidel-romano/",
   },
   {
     icon: <FiGithub />,
-    href: "",
+    href: "https://github.com/httpfido",
   },
   {
     icon: <FiInstagram />,
-    href: "",
+    href: "https://www.instagram.com/http_fido/",
   },
   // {
   //   icon: <FiDribbble />,

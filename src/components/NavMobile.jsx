@@ -94,7 +94,7 @@ const NavMobile = () => {
             </li>
           );
         })}
-        <div className="flex w-content lg:hidden border mt-[50px]">
+        <div className="flex w-content lg:hidden mt-[50px]">
           <Socials />
         </div>
       </motion.ul>

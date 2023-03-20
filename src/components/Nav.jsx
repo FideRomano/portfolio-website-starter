@@ -8,10 +8,10 @@ import { Link } from "react-scroll";
 
 import { windowDimensions } from "./WindowsDimentions";
 
-
 const Nav = () => {
-  return <nav>
-      <ul className='flex space-x-8 capitalize text-[15px]'>
+  return (
+    <nav>
+      <ul className="flex space-x-8 capitalize text-[15px]">
         {navigation.map((item, index) => {
           return (
             <li
@@ -25,14 +25,24 @@ const Nav = () => {
                 smooth={true}
                 duration={500}
                 offset={-windowDimensions.navScrolled}
-              className='transition-all duration-300'>
+                className="transition-all duration-300"
+              >
                 {item.name}
               </Link>
             </li>
           );
         })}
+        <a
+        className="text-white hover:text-accent cursor-pointer transition-all duration-300"
+          href="https://docs.google.com/document/d/12aM-wGNlq6KT7L12TKPwU5KuFaAnRRgTp-H6-DTox_k/edit?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Curriculum Vitae
+        </a>
       </ul>
     </nav>
+  );
 };
 
 export default Nav;
