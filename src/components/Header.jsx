@@ -5,12 +5,13 @@ import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import Socials from "./Socials";
 import { windowDimensions } from "./WindowsDimentions";
+import Logo from '../assets/img/logo.png' 
+
 
 const Header = () => {
   const [bg, setBg] = useState(false);
   const scrolled = windowDimensions.navScrolled
   const nav = windowDimensions.navHeight
-  console.log(scrolled);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -25,8 +26,8 @@ const Header = () => {
       } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
-        <a href="#">
-            Fidel Romano
+        <a href="/">
+            <img src={Logo} alt="" className='h-8 lg:h-11' />
         </a>
         <div className='hidden lg:block'>
             <Nav/>

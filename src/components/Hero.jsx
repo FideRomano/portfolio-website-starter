@@ -1,5 +1,4 @@
 import React from "react";
-import Socials from "./Socials";
 
 // import woman image
 import LottieAnimation from "./Lottie";

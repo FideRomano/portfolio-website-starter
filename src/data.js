@@ -35,7 +35,7 @@ import SkillImg7 from "./assets/img/skills/git.png";
 import SkillImg8 from "./assets/img/skills/figma.png";
 import SkillImg9 from "./assets/img/skills/sequelize.png";
 import SkillImg10 from "./assets/img/skills/express.png";
-import SkillImg11 from "./assets/img/skills/tailwindcss.svg";
+import SkillImg11 from "./assets/img/skills/tailwind.png";
 import SkillImg12 from "./assets/img/skills/postgres.png";
 import SkillImg13 from "./assets/img/skills/sqlite.png";
 import SkillImg14 from "./assets/img/skills/visual.png";
@@ -83,14 +83,17 @@ export const navigation = [
 // social
 export const social = [
   {
+    name: "Linkedin",
     icon: <FiLinkedin />,
     href: "https://www.linkedin.com/in/fidel-romano/",
   },
   {
+    name: "GitHub",
     icon: <FiGithub />,
     href: "https://github.com/httpfido",
   },
   {
+    name: "Instagram",
     icon: <FiInstagram />,
     href: "https://www.instagram.com/http_fido/",
   },
@@ -104,11 +107,11 @@ export const social = [
 export const brands = [
   {
     img: FreelancerBrandIcon,
-    href: "",
+    href: "https://www.freelancer.com.ar/u/httpfido",
   },
   {
     img: UpworkBrandIcon,
-    href: "",
+    href: "https://www.upwork.com/freelancers/~01f894bd5ed213a2db",
   },
   {
     img: FiverBrandIcon,
@@ -217,16 +220,16 @@ export const skillsFront = [
     href: "https://nextjs.org/"
   },
   {
-    image: SkillImg8,
-    name: "Figma",
-    type: "front",
-    href: "https://www.figma.com/"
-  },
-  {
     image: SkillImg11,
     name: "TailwindCSS",
     type: "front",
     href: "https://tailwindcss.com/"
+  },
+  {
+    image: SkillImg8,
+    name: "Figma",
+    type: "front",
+    href: "https://www.figma.com/"
   },
   {
     image: SkillImg15,

@@ -30,11 +30,12 @@ const SkillList = ({ title, skills }) => (
 
 const Skills = () => {
   const { windowHeight, navScrolled } = windowDimensions;
-  const minHeight = windowHeight - navScrolled;
+  const vh = windowDimensions.windowHeight - windowDimensions.navScrolled
+
   return (
     <section
-      style={{ minHeight }}
-      className="bg-tertiary flex items-center"
+    style={{minHeight: `${vh}px`}} 
+    className="bg-tertiary flex items-center"
       id="skills"
     >
       <div className="container mx-auto">

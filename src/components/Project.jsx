@@ -5,7 +5,7 @@ const Project = ({ item }) => {
   return (
     <div
       key={item.id}
-      className="flex flex-col lg:flex-row-reverse lg:place-content-between items-center lg:items-start text-center mb-10 p-1 lg:h-fit border-b border-gray-500 pb-10 "
+      className="flex flex-col lg:flex-row-reverse lg:place-content-between items-center lg:items-start text-center mb-10 p-1 lg:h-fit border-b border-gray-400 pb-10 "
     >
       <div className="lg:max-w-[45%] border-x-4 border-y-[15px] border-gray-200 rounded-2xl cursor-pointer relative group">
         <a href={item.href} target="_blank" rel="noreferrer">

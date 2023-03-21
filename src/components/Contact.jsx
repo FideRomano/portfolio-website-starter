@@ -12,8 +12,7 @@ const Contact = () => {
             Trabaja conmigo
           </h2>
           <p className="subtitle">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint similique molestiae ea error, nostrum facere quibusdam non
-            architecto accusantium enim officia consequuntur ipsum iure dignissimos, neque placeat fuga vero dolor!
+            La comunicación constante es muy importante para mi, asi que mantengamonos en contacto!
           </p>
         </div>
         <div className="flex flex-col lg:gap-x-8 lg:flex-row">

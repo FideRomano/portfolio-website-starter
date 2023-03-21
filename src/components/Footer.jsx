@@ -1,28 +1,61 @@
-import React from 'react';
+import React from "react";
 
 // import social data
-import { social} from '../data'
+import { social } from "../data";
 
 // import logo
-import Logo from '../assets/img/foto-cv2-fondo-azul.png' 
+import Logo from "../assets/img/logo - copia.png";
+
+// importar iconos FI
+import {
+    FiMail
+} from "react-icons/fi";
+
+import { ImWhatsapp } from "react-icons/im";
 
 const Footer = () => {
-    return <footer className='bg-tertiary py-12'>
-        <div className="container mx-auto">
-            <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 items-center justify-between">
-                <div className="flex space-x-6 items-center justify-center">
-                    {social.map((item,index)=>{
-                        const {href, icon} = item
-                        return <a href={href} key={index} className='text-base text-accent' target='_blank' rel='noreferrer'>{icon}</a>
-                    })}
-                </div>
-                <div>
-                    {/* <img src={Logo} alt="" /> */}
-                </div>
-                <p>&copy; 2023 Http Fido. All rights reserved.</p>
+  return (
+    <footer className="bg-tertiary">
+      <div className="container mx-auto">
+        <div className=" flex flex-col lg:flex-row mx-auto space-y-6 lg:space-y-0 items-center justify-between py-12">
+          {/* <div className="flex flex-col md:flex-row w-full justify-center md:justify-between border"> */}
+
+          <div className="w-auto">
+            <img src={Logo} alt="" className="h-[80px] lg:h-[100px]" />
+          </div>
+          <div className="flex">
+            <div className="flex flex-col mx-5 md:mx-[100px]">
+              <h1 className="mb-4 text-xl">Redes</h1>
+              <div className="flex-col space-x-6 items-center justify-center">
+                {social.map((item, index) => {
+                  const { href, icon, name } = item;
+                  return (
+                    <a href={href} key={index} target="_blank" rel="noreferrer">
+                      <div className="flex items-center text-gray-300 text-sm">
+                        <div className="mr-2">{icon}</div>
+                        <p>{name}</p>
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
+              {/* </div> */}
             </div>
+            <div className="flex flex-col mx-5 md:mx-10">
+              <h1 className="mb-4 text-xl">Contacto</h1>
+              <a href="https://wa.me/5491127191198" target='_blank' rel="noreferrer" className="flex items-center text-gray-300 text-sm">
+                <ImWhatsapp className="mr-2"/>
+                <p>WhatsApp</p>
+              </a>
+            </div>
+          </div>
         </div>
-     </footer>
+      </div>
+      <p className="text-center text-white w-full border-t border-gray-400 px-2 py-4">
+        © 2022 | HTTP FIDO Desarrollo Web | Derechos Reservados.
+      </p>
+    </footer>
+  );
 };
 
-export default Footer
+export default Footer;
