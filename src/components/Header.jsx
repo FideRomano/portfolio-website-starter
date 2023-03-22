@@ -5,13 +5,12 @@ import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import Socials from "./Socials";
 import { windowDimensions } from "./WindowsDimentions";
-import Logo from '../assets/img/logo-header.svg' 
-
+import Logo from "../assets/img/logo-header.svg";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
-  const scrolled = windowDimensions.navScrolled
-  const nav = windowDimensions.navHeight
+  const scrolled = windowDimensions.navScrolled;
+  const nav = windowDimensions.navHeight;
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -20,23 +19,23 @@ const Header = () => {
   });
   return (
     <header
-    style={bg? {minHeight:`${scrolled}px`} : {minHeight:`${nav}px`}}
+      style={bg ? { minHeight: `${scrolled}px` } : { minHeight: `${nav}px` }}
       className={`${
         bg ? "bg-tertiary" : "bg-none"
       } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
         <a href="/">
-            <img src={Logo} alt="" className='h-8 lg:h-11' />
+          <img src={Logo} alt="" className="h-8 lg:h-11" />
         </a>
-        <div className='hidden lg:block'>
-            <Nav/>
+        <div className="hidden lg:block">
+          <Nav />
         </div>
-        <div className='hidden lg:block'>
-            <Socials/>
+        <div className="hidden lg:block">
+          <Socials />
         </div>
-        <div className='lg:hidden'>
-            <NavMobile/>
+        <div className="lg:hidden">
+          <NavMobile />
         </div>
       </div>
     </header>
