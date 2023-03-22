@@ -13,7 +13,7 @@ const Hero = () => {
     <section
       id="home"
       style={{ minHeight: window.innerWidth > 640 ? `${vh}px` : "auto" }}
-      className="flex h-[85vh] items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat overflow-hidden"
+      className="flex h-[85vh] items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat overflow-hidden transition-all duration-100"
     >
       <div className="container mx-auto h-full">
         <div className="flex items-center h-full pt-8">
