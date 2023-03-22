@@ -4,13 +4,9 @@ import React from "react";
 import { social } from "../data";
 
 // import logo
-import Logo from "../assets/img/logo - copia.png";
+import Logo from "../assets/img/logo.svg";
 
-// importar iconos FI
-import {
-    FiMail
-} from "react-icons/fi";
-
+// import icon 
 import { ImWhatsapp } from "react-icons/im";
 
 const Footer = () => {
@@ -21,11 +17,11 @@ const Footer = () => {
           {/* <div className="flex flex-col md:flex-row w-full justify-center md:justify-between border"> */}
 
           <div className="w-auto">
-            <img src={Logo} alt="" className="h-[80px] lg:h-[100px]" />
+            <img src={Logo} alt="" className="h-[80px] lg:h-[100px] mb-10 lg:mb-0" />
           </div>
-          <div className="flex">
+          <div className="flex lg:w-1/2">
             <div className="flex flex-col mx-5 md:mx-[100px]">
-              <h1 className="mb-4 text-xl">Redes</h1>
+              <h1 className="mb-4 text-xl text-white">Redes</h1>
               <div className="flex-col space-x-6 items-center justify-center">
                 {social.map((item, index) => {
                   const { href, icon, name } = item;
@@ -42,7 +38,7 @@ const Footer = () => {
               {/* </div> */}
             </div>
             <div className="flex flex-col mx-5 md:mx-10">
-              <h1 className="mb-4 text-xl">Contacto</h1>
+              <h1 className="mb-4 text-xl text-white">Contacto</h1>
               <a href="https://wa.me/5491127191198" target='_blank' rel="noreferrer" className="flex items-center text-gray-300 text-sm">
                 <ImWhatsapp className="mr-2"/>
                 <p>WhatsApp</p>

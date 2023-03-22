@@ -29,7 +29,6 @@ const SkillList = ({ title, skills }) => (
 );
 
 const Skills = () => {
-  const { windowHeight, navScrolled } = windowDimensions;
   const vh = windowDimensions.windowHeight - windowDimensions.navScrolled
 
   return (

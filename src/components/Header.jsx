@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import Socials from "./Socials";
 import { windowDimensions } from "./WindowsDimentions";
-import Logo from '../assets/img/logo.png' 
+import Logo from '../assets/img/logo-header.svg' 
 
 
 const Header = () => {
