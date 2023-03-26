@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import Socials from "./Socials";
 import { windowDimensions } from "./WindowsDimentions";
-import Logo from "../assets/img/logo-header.svg";
+import Logo from "../assets/img/logotipo-httpfido-sin-fondo.svg";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
