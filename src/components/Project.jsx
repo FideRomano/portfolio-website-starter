@@ -17,7 +17,7 @@ const Project = ({ item }) => {
           />
           {item.description !== "Proximamente" && (
             <h1 className="absolute opacity-0 lg:group-hover:opacity-100 transition-opacity duration-400 text-2xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              Visitar sitio web
+              Ver demo
             </h1>
           )}
         </a>

@@ -135,8 +135,8 @@ export const projectsData = [
     name: "GameFindeX",
     category: "individual",
     description:
-      "El objetivo es una SPA con todos los conocimientos aprendidos en el Bootcamp de Henry. Esta SPA consume informacion de una API externa, para hacer funcionalidades como buscar juegos, paginado, detalle de cada juego, filtros combinados con ordenamiento, y tambien tener la posibilidad de añadir un juego a la lista",
-    href: "https://pi-videogames-gamma-lyart.vercel.app/",
+      "El objetivo es una SPA con todos los conocimientos aprendidos en el Bootcamp de Henry. Esta SPA consume informacion de una API externa, para hacer funcionalidades como buscar juegos, paginado, detalle de cada juego, filtros combinados con ordenamiento, y tambien tener la posibilidad de añadir un juego a la lista. NO APTO PARA MOBILE",
+    href: "https://www.youtube.com/watch?v=s_xsx8j3DkE",
     links: [
       {
         icon: <FiGithub />,
@@ -154,8 +154,8 @@ export const projectsData = [
     name: "FlexAGENDA",
     category: "grupal",
     description:
-    "FlexAGENDA es una agenda virtual para profesionales. Es un sitio web diseñado para la gestion de turnos y manejo de clientes.  Ofrece un calendario interactivo con filtros, borrado lógico, pasarela de pagos, autenticación, entre otras tecnologías de desarrollo web.",
-    href: "https://flex-agenda.vercel.app/",
+    "FlexAGENDA es una agenda virtual para profesionales. Es un sitio web diseñado para la gestion de turnos y manejo de clientes.  Ofrece un calendario interactivo con filtros, borrado lógico, pasarela de pagos, autenticación, entre otras tecnologías de desarrollo web. NO APTO PARA MOBILE",
+    href: "https://www.youtube.com/watch?v=i9h7lQ1n0Ts",
     links: [
       {
         icon: <FiGithub />,

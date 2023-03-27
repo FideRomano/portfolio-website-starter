@@ -26,7 +26,7 @@ const Header = () => {
     >
       <div className="container mx-auto h-full flex items-center justify-between">
         <a href="/">
-          <img src={Logo} alt="" className="h-8 lg:h-[50px]" />
+          <img src={Logo} alt="" className="h-10 lg:h-11" />
         </a>
         <div className="hidden lg:block">
           <Nav />

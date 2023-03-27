@@ -3,7 +3,26 @@ import React from "react";
 // import contact data
 import { contact } from "../data";
 
+// import emailjs
+import emailjs from "emailjs-com";
+
 const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_kuzc8kh",
+        "template_8n8i9ef",
+        e.target,
+        "jWUavUhEUpUpkgIN7"
+      )
+      .then((res) => {
+        alert("¡Mensaje enviado!");
+        console.log(res);
+      });
+  };
+
   return (
     <section id="contact" className="section bg-primary">
       <div className="container mx-auto">
@@ -12,7 +31,8 @@ const Contact = () => {
             Trabaja conmigo
           </h2>
           <p className="subtitle">
-            La comunicación constante es muy importante para mi, asi que mantengamonos en contacto!
+            La comunicación constante es muy importante para mi, asi que
+            mantengamonos en contacto!
           </p>
         </div>
         <div className="flex flex-col lg:gap-x-8 lg:flex-row">
@@ -33,14 +53,40 @@ const Contact = () => {
               );
             })}
           </div>
-          <form className="space-y-8 w-full max-w-[780px]">
+          <form className="space-y-8 w-full max-w-[780px]" onSubmit={sendEmail}>
             <div className="flex gap-8">
-              <input type="text" className="input" placeholder="Tu nombre" />
-              <input type="email" className="input" placeholder="Tu email" />
+              <input
+                type="text"
+                className="input"
+                placeholder="Tu nombre"
+                id="nombre"
+                name="nombre"
+              />
+              <input
+                type="email"
+                className="input"
+                placeholder="Tu email"
+                id="email"
+                name="email"
+              />
             </div>
-            <input type="text" className="input" placeholder="Asunto" />
-            <textarea className="textarea" placeholder="Tu mensaje"></textarea>
-            <button className="btn btn-lg bg-accent hover:bg-accent-hover">
+            <input
+              type="text"
+              className="input"
+              placeholder="Asunto"
+              id="asunto"
+              name="asunto"
+            />
+            <textarea
+              className="textarea"
+              placeholder="Tu mensaje"
+              id="mensaje"
+              name="mensaje"
+            ></textarea>
+            <button
+              className="btn btn-lg bg-accent hover:bg-accent-hover"
+              type="submit"
+            >
               Enviar
             </button>
           </form>
