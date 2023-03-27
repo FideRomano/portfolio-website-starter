@@ -4,7 +4,7 @@ import React from "react";
 import { social } from "../data";
 
 // import logo
-import Logo from "../assets/img/isologotipo-httpfido-horizontal-sin-fondo.svg";
+import Logo from "../assets/img/isologotipo-httpfido-horizontal-sin-fondo.png";
 
 // import icon 
 import { ImWhatsapp } from "react-icons/im";

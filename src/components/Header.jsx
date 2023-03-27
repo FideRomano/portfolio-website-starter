@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import Socials from "./Socials";
 import { windowDimensions } from "./WindowsDimentions";
-import Logo from "../assets/img/logotipo-httpfido-sin-fondo.svg";
+import Logo from "../assets/img/isotipo-httpfido-blanco-sin-fondo.svg";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -26,7 +26,7 @@ const Header = () => {
     >
       <div className="container mx-auto h-full flex items-center justify-between">
         <a href="/">
-          <img src={Logo} alt="" className="h-8 lg:h-11" />
+          <img src={Logo} alt="" className="h-8 lg:h-[50px]" />
         </a>
         <div className="hidden lg:block">
           <Nav />
