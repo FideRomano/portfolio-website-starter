@@ -29,7 +29,7 @@ import SkillImg1 from "./assets/img/skills/html5.png";
 import SkillImg2 from "./assets/img/skills/css3.png";
 import SkillImg3 from "./assets/img/skills/js.png";
 import SkillImg4 from "./assets/img/skills/reactjs.png";
-import SkillImg5 from "./assets/img/skills/nextjs.png";
+// import SkillImg5 from "./assets/img/skills/nextjs.png";
 import SkillImg6 from "./assets/img/skills/nodejs.png";
 import SkillImg7 from "./assets/img/skills/git.png";
 import SkillImg8 from "./assets/img/skills/figma.png";
@@ -42,6 +42,8 @@ import SkillImg14 from "./assets/img/skills/visual.png";
 import SkillImg15 from "./assets/img/skills/redux.png";
 import SkillImg16 from "./assets/img/skills/typescript.png";
 import SkillImg17 from "./assets/img/skills/firebase.png";
+import SkillImg18 from "./assets/img/skills/ai.png";
+import SkillImg19 from "./assets/img/skills/ps.png";
 
 // testimonial images
 import TestiImage1 from "./assets/img/testimonials/testimonial-1.webp";
@@ -213,12 +215,12 @@ export const skillsFront = [
     type: "front",
     href: "https://es.reactjs.org/"
   },
-  {
-    image: SkillImg5,
-    name: "Next JS",
-    type: "front",
-    href: "https://nextjs.org/"
-  },
+  // {
+    // image: SkillImg5,
+  //   name: "Next JS",
+  //   type: "front",
+  //   href: "https://nextjs.org/"
+  // },
   {
     image: SkillImg11,
     name: "TailwindCSS",
@@ -226,16 +228,16 @@ export const skillsFront = [
     href: "https://tailwindcss.com/"
   },
   {
-    image: SkillImg8,
-    name: "Figma",
-    type: "front",
-    href: "https://www.figma.com/"
-  },
-  {
     image: SkillImg15,
     name: "Redux",
     type: "front",
     href: "https://redux.js.org/"
+  },
+  {
+    image: SkillImg8,
+    name: "Figma",
+    type: "front",
+    href: "https://www.figma.com/"
   },
 ];
 
@@ -303,6 +305,18 @@ export const skillsOther = [
     type: "other",
     href: "https://code.visualstudio.com/"
   },
+  {
+    image: SkillImg18,
+    name: "Illustrator",
+    type: "other",
+    href: "https://www.adobe.com/ar/products/illustrator.html"
+  },
+  {
+    image: SkillImg19,
+    name: "Photoshop",
+    type: "other",
+    href: "https://www.adobe.com/ar/products/illustrator.html"
+  },
 ];
 
 // services
@@ -323,7 +337,7 @@ export const services = [
     icon: <FiPenTool />,
     name: "Branding",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
   },
   {
     icon: <FiTag />,
