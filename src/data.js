@@ -315,7 +315,7 @@ export const skillsOther = [
     image: SkillImg19,
     name: "Photoshop",
     type: "other",
-    href: "https://www.adobe.com/ar/products/illustrator.html"
+    href: "https://www.adobe.com/ar/products/photoshop.html"
   },
 ];
 
