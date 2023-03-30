@@ -94,6 +94,14 @@ const NavMobile = () => {
             </li>
           );
         })}
+                <a
+        className="text-xl cursor-pointer capitalize"
+          href="https://docs.google.com/document/d/12aM-wGNlq6KT7L12TKPwU5KuFaAnRRgTp-H6-DTox_k/edit?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Curriculum Vitae
+        </a>
         <div className="flex w-content lg:hidden mt-[50px]">
           <Socials />
         </div>
