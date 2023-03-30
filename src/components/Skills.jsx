@@ -6,7 +6,7 @@ import { skillsFront, skillsBack, skillsOther } from "../data";
 import { windowDimensions } from "./WindowsDimentions";
 
 const SkillList = ({ title, skills }) => (
-  <div className="rounded-lg bg-secondary mb-5 pt-4 pb-4">
+  <div className="rounded-lg bg-secondary mb-5 pt-1 pb-2">
     <h1 className="text-lg ml-5 mb-3">{title}</h1>
     <div className="grid grid-cols-8 md:grid-flow-row">
       {skills.map((skill, index) => (
