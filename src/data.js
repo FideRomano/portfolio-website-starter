@@ -23,6 +23,7 @@ import DribbbleBrandIcon from "./assets/img/brands/dribbble.png";
 import GameFindeX from "./assets/img/projects/p1.png";
 import FlexAGENDA from "./assets/img/projects/p2.png";
 import movi from "./assets/img/projects/movi.png";
+import portfolio from "./assets/img/projects/portfolio.png";
 import loading from "./assets/img/projects/loading.jpg";
 
 // skills images
@@ -30,7 +31,6 @@ import SkillImg1 from "./assets/img/skills/html5.png";
 import SkillImg2 from "./assets/img/skills/css3.png";
 import SkillImg3 from "./assets/img/skills/js.png";
 import SkillImg4 from "./assets/img/skills/reactjs.png";
-// import SkillImg5 from "./assets/img/skills/nextjs.png";
 import SkillImg6 from "./assets/img/skills/nodejs.png";
 import SkillImg7 from "./assets/img/skills/git.png";
 import SkillImg8 from "./assets/img/skills/figma.png";
@@ -172,7 +172,7 @@ export const projectsData = [
     ],
   },
   {
-    id: "2",
+    id: "3",
     image: FlexAGENDA,
     name: "FlexAGENDA",
     category: "grupal",
@@ -191,7 +191,26 @@ export const projectsData = [
     ],
   },
   {
-    id: "3",
+    id: "4",
+    image: portfolio,
+    name: "Mi portfolio",
+    category: "branding",
+    description:
+    "Lo que estás viendo :)",
+    href: "https://fidel-portfolio-pink.vercel.app/",
+    links: [
+      {
+        icon: <FiGithub />,
+        href: "https://github.com/httpfido/portfolio",
+      },
+      {
+        icon: <FiLink />,
+        href: "https://fidel-portfolio-pink.vercel.app/",
+      },
+    ],
+  },
+  {
+    id: "0",
     image: loading,
     name: "Netflix clon",
     category: "individual",
