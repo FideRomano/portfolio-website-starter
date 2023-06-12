@@ -22,6 +22,7 @@ import DribbbleBrandIcon from "./assets/img/brands/dribbble.png";
 // projects images
 import GameFindeX from "./assets/img/projects/p1.png";
 import FlexAGENDA from "./assets/img/projects/p2.png";
+import movi from "./assets/img/projects/movi.png";
 import loading from "./assets/img/projects/loading.jpg";
 
 // skills images
@@ -134,6 +135,25 @@ export const brands = [
 export const projectsData = [
   {
     id: "1",
+    image: movi,
+    name: "Movi",
+    category: "grupal",
+    description:
+      "Movi es un sitio web multiplataforma que brinda al usuario la oportunidad de elegir un medio de transporte. Ofrece búsqueda de pasajes, historial y valoración de viajes, envío de paquetes, pasarela de pagos, autenticación por terceros, entre otras tecnologías de desarrollo web.",
+    href: "https://urban-movi.vercel.app/",
+    links: [
+      {
+        icon: <FiGithub />,
+        href: "https://github.com/pablosecuen/Urban-movi/",
+      },
+      {
+        icon: <FiLink />,
+        href: "https://pi-videogames-gamma-lyart.vercel.app/",
+      },
+    ],
+  },
+  {
+    id: "2",
     image: GameFindeX,
     name: "GameFindeX",
     category: "individual",
