@@ -44,6 +44,7 @@ import SkillImg16 from "./assets/img/skills/typescript.png";
 import SkillImg17 from "./assets/img/skills/firebase.png";
 import SkillImg18 from "./assets/img/skills/ai.png";
 import SkillImg19 from "./assets/img/skills/ps.png";
+import SkillImg20 from "./assets/img/skills/nextjs.png";
 
 // testimonial images
 import TestiImage1 from "./assets/img/testimonials/testimonial-1.webp";
@@ -215,12 +216,12 @@ export const skillsFront = [
     type: "front",
     href: "https://es.reactjs.org/"
   },
-  // {
-    // image: SkillImg5,
-  //   name: "Next JS",
-  //   type: "front",
-  //   href: "https://nextjs.org/"
-  // },
+  {
+    image: SkillImg20,
+    name: "Next JS",
+    type: "front",
+    href: "https://nextjs.org/"
+  },
   {
     image: SkillImg11,
     name: "TailwindCSS",
