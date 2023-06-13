@@ -2,6 +2,7 @@ import React from "react";
 
 // import woman image
 import LottieAnimation from "./Lottie";
+import { TypeAnimation } from "react-type-animation";
 
 import { windowDimensions } from "./WindowsDimentions";
 
@@ -20,8 +21,17 @@ const Hero = () => {
           {/* left side */}
           <div className="flex-1 flex flex-col items-center lg:items-start">
             <p className="text-xl text-accent mb-[22px]">Hola! Soy Fidel</p>
-            <h1 className="text-4xl text-center leading-[44px] md:text-5xl lg:text-left md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
-              Full stack <br />
+            <h1 className="text-4xl text-center leading-[44px] md:text-5xl lg:text-left md:leading-tight lg:text-6xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
+              <TypeAnimation
+                sequence={[`Frontend`, 2000, "Backend", 2000, "Full Stack", 2000]}
+                cursor={false}
+                wrapper="span"
+                speed={50}
+                style={{ display: "inline-block" }}
+                repeat={Infinity}
+              />
+            </h1>
+            <h1 className="text-4xl text-center leading-[44px] md:text-5xl lg:text-left md:leading-tight lg:text-6xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
               Web Developer
             </h1>
             <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left">
