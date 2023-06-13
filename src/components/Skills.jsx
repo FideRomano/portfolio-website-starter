@@ -1,5 +1,4 @@
 import React from "react";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
 
 // import skills data
 import { skillsFront, skillsBack, skillsOther } from "../data";
@@ -7,7 +6,12 @@ import { skillsFront, skillsBack, skillsOther } from "../data";
 import { windowDimensions } from "./WindowsDimentions";
 
 const SkillList = ({ title, skills }) => (
-  <div className="rounded-lg bg-secondary mb-5 pt-1 pb-2">
+  <div className="rounded-lg bg-secondary mb-5 pt-1 pb-2" data-aos="fade-up"
+  // data-aos-offset="200"
+  data-aos-delay="100"
+  // data-aos-duration="1000"
+  data-aos-once="true"
+  >
     <h1 className="text-lg ml-5 mb-3">{title}</h1>
     <div className="grid grid-cols-8 md:grid-flow-row">
       {skills.map((skill, index) => (
@@ -42,7 +46,6 @@ const Skills = () => {
         <h1 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-10">
           Skills
         </h1>
-        <Fade cascade damping={0.3} delay={500} direction="up" triggerOnce>
 
         <SkillList title="Front end" skills={skillsFront} />
         <SkillList title="Back end" skills={skillsBack} />
@@ -50,7 +53,6 @@ const Skills = () => {
           title="Programming Languages &amp; tools"
           skills={skillsOther}
           />
-          </Fade>
       </div>
     </section>
   );
