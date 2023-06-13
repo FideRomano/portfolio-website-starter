@@ -6,10 +6,10 @@ import { skillsFront, skillsBack, skillsOther } from "../data";
 import { windowDimensions } from "./WindowsDimentions";
 
 const SkillList = ({ title, skills }) => (
-  <div className="rounded-lg bg-secondary mb-5 pt-1 pb-2" data-aos="fade-up"
-  // data-aos-offset="200"
+  <div className="rounded-lg bg-secondary mb-10 pt-1 pb-4" data-aos="fade-up"
+  data-aos-offset="200"
   data-aos-delay="100"
-  // data-aos-duration="1000"
+  data-aos-duration="400"
   data-aos-once="true"
   >
     <h1 className="text-lg ml-5 mb-3">{title}</h1>
@@ -38,12 +38,12 @@ const Skills = () => {
 
   return (
     <section
-    style={{minHeight: `${vh}px`}} 
-    className="bg-tertiary flex items-center"
+    // style={{minHeight: `${vh}px`}} 
+    className="bg-tertiary flex items-center min-h-screen"
       id="skills"
     >
       <div className="container mx-auto">
-        <h1 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-10">
+        <h1 className="text-3xl lg:text-4xl font-medium lg:font-extrabold my-10">
           Skills
         </h1>
 
