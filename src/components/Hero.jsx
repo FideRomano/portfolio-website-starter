@@ -7,7 +7,6 @@ import { TypeAnimation } from "react-type-animation";
 import { windowDimensions } from "./WindowsDimentions";
 
 import { Link } from "react-scroll";
-
 const Hero = () => {
   const vh = windowDimensions.windowHeight - windowDimensions.navHeight;
   return (
