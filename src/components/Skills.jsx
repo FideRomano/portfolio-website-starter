@@ -16,7 +16,7 @@ const SkillList = ({ title, skills }) => (
         <a href={skill.href} target="_blank" rel="noreferrer" key={index}>
           <div className="group flex items-center justify-center relative">
             <img
-              className="cursor-pointer w-24 transition-all duration-100 ease-linear transform group-hover:scale-110"
+              className="cursor-pointer w-20 transition-all duration-100 ease-linear transform group-hover:scale-110"
               src={skill.image}
               alt=""
             />
@@ -33,7 +33,7 @@ const SkillList = ({ title, skills }) => (
 const Skills = () => {
   return (
     <section
-    className="bg-tertiary flex items-center min-h-screen"
+    className="bg-tertiary flex items-center min-h-screen "
       id="skills"
     >
       <div className="container mx-auto ">
