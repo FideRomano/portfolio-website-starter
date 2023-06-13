@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
 
 // import skills data
 import { skillsFront, skillsBack, skillsOther } from "../data";
@@ -41,12 +42,15 @@ const Skills = () => {
         <h1 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-10">
           Skills
         </h1>
+        <Fade cascade damping={0.3} delay={500} direction="up" triggerOnce>
+
         <SkillList title="Front end" skills={skillsFront} />
         <SkillList title="Back end" skills={skillsBack} />
         <SkillList
           title="Programming Languages &amp; tools"
           skills={skillsOther}
-        />
+          />
+          </Fade>
       </div>
     </section>
   );
