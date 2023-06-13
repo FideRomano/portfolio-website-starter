@@ -1,19 +1,13 @@
 import React from "react";
-
-// import woman image
 import LottieAnimation from "./Lottie";
 import { TypeAnimation } from "react-type-animation";
-
-import { windowDimensions } from "./WindowsDimentions";
-
+import Brands from "./Brands";
 import { Link } from "react-scroll";
 const Hero = () => {
-  const vh = windowDimensions.windowHeight - windowDimensions.navHeight;
   return (
     <section
       id="home"
-      style={{ minHeight: window.innerWidth > 640 ? `${vh}px` : "auto" }}
-      className="flex h-[85vh] items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat overflow-hidden transition-all duration-100"
+      className="flex flex-col justify-between min-h-screen h-screen items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat overflow-hidden transition-all duration-100"
     >
       <div className="container mx-auto h-full">
         <div className="flex items-center h-full pt-8">
@@ -41,8 +35,7 @@ const Hero = () => {
               activeClass="active"
               spy={true}
               smooth={true}
-              duration={500}
-              offset={-windowDimensions.navScrolled}
+              duration={900}
               className="transition-all duration-300"
             >
               <button className="btn btn-md bg-accent hover:bg-accent-hover md-btn-lg">
@@ -56,6 +49,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <Brands/>
     </section>
   );
 };

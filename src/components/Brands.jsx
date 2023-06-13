@@ -1,13 +1,9 @@
 import React from "react";
-
 // import brands data
 import {brands} from '../data'
 
-import { windowDimensions } from "./WindowsDimentions";
-
-
 const Brands = () => {
-  return <section id='home' style={{minHeight:`${windowDimensions.navHeight}px`}} className='bg-tertiary flex items-center'>
+  return <section id='home' className='bg-tertiary w-full flex items-center border-t'>
     <div className='container mx-auto flex md:justify-between items-center flex-wrap justify-evenly '>
         {brands.map((brand,index)=>{
           const {href} = brand

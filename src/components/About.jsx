@@ -2,11 +2,9 @@ import React from "react";
 
 // import image
 import Image from "../assets/img/foto-cv2-sin-fondo.png";
-import { windowDimensions } from "./WindowsDimentions";
 import { Link } from "react-scroll";
 
 const About = () => {
-  const vh = windowDimensions.windowHeight - windowDimensions.navScrolled;
   return (
     <section
       className="section bg-secondary flex items-center min-h-screen"
@@ -53,8 +51,7 @@ const About = () => {
               activeClass="active"
               spy={true}
               smooth={true}
-              duration={500}
-              offset={-windowDimensions.navScrolled}
+              duration={900}
               className="transition-all duration-300"
             >
               <button className="btn btn-md bg-accent hover:bg-accent-hover md-btn-lg">

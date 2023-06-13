@@ -3,8 +3,6 @@ import React from "react";
 // import skills data
 import { skillsFront, skillsBack, skillsOther } from "../data";
 
-import { windowDimensions } from "./WindowsDimentions";
-
 const SkillList = ({ title, skills }) => (
   <div className="rounded-lg bg-secondary mb-10 pt-1 pb-4" data-aos="fade-up"
   data-aos-offset="200"
@@ -22,7 +20,6 @@ const SkillList = ({ title, skills }) => (
               src={skill.image}
               alt=""
             />
-
             <span className="text-sm text-center text-white bg-tertiary absolute top-1 opacity-0 lg:group-hover:opacity-100 md:text-lg px-2 rounded animate-bounce">
               {skill.name}
             </span>
@@ -34,19 +31,15 @@ const SkillList = ({ title, skills }) => (
 );
 
 const Skills = () => {
-  const vh = windowDimensions.windowHeight - windowDimensions.navScrolled
-
   return (
     <section
-    // style={{minHeight: `${vh}px`}} 
     className="bg-tertiary flex items-center min-h-screen"
       id="skills"
     >
-      <div className="container mx-auto">
-        <h1 className="text-3xl lg:text-4xl font-medium lg:font-extrabold my-10">
+      <div className="container mx-auto ">
+        <h1 className="text-3xl lg:text-4xl font-medium lg:font-extrabold my-10 ">
           Skills
         </h1>
-
         <SkillList title="Front end" skills={skillsFront} />
         <SkillList title="Back end" skills={skillsBack} />
         <SkillList
