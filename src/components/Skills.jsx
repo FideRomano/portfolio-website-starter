@@ -11,7 +11,7 @@ const SkillList = ({ title, skills }) => (
   data-aos-once="true"
   >
     <h1 className="text-lg ml-5 mb-3">{title}</h1>
-    <div className="grid grid-cols-8 md:grid-flow-row">
+    <div className="lg:px-10 grid grid-cols-8 md:grid-flow-row">
       {skills.map((skill, index) => (
         <a href={skill.href} target="_blank" rel="noreferrer" key={index}>
           <div className="group flex items-center justify-center relative">

@@ -54,7 +54,7 @@ const About = () => {
               duration={900}
               className="transition-all duration-300"
             >
-              <button className="btn btn-md bg-accent hover:bg-accent-hover md-btn-lg">
+              <button className="btn btn-md rounded-full md:rounded-sm bg-accent hover:bg-accent-hover md-btn-lg">
                 Trabaja conmigo
               </button>
             </Link>

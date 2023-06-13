@@ -42,7 +42,7 @@ module.exports = {
         secondary: '#1C1D24',
         tertiary: '#131419',
         accent: {
-          DEFAULT: '#ac6b34',
+          DEFAULT: '#c2793c',
           hover: '#925a2b',
         },
         paragraph: '#878e99',

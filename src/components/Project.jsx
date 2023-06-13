@@ -6,7 +6,11 @@ const Project = ({ item }) => {
     <div
       key={item.id}
       className="flex flex-col lg:flex-row-reverse lg:place-content-between items-center lg:items-start text-center mb-10 p-1 lg:h-fit border-b border-gray-400 pb-10 "
-    >
+      data-aos="fade-up"
+      data-aos-offset="100"
+      data-aos-delay="100"
+      data-aos-duration="400"
+      data-aos-once="true">
       <div className="lg:max-w-[45%] border-x-4 border-y-[15px] border-gray-200 rounded-2xl cursor-pointer relative group">
         <a href={item.href} target="_blank" rel="noreferrer">
           {item.description === "Proximamente" && <Hamster />}
