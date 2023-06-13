@@ -84,7 +84,7 @@ const Contact = () => {
               name="mensaje"
             ></textarea>
             <button
-              className="btn btn-lg bg-accent hover:bg-accent-hover"
+              className="btn btn-lg rounded-full md:rounded-sm w-full md:w-auto bg-accent hover:bg-accent-hover"
               type="submit"
             >
               Enviar
