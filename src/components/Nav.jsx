@@ -23,9 +23,9 @@ const Nav = () => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                duration={500}
-                offset={-windowDimensions.navScrolled}
-                className="transition-all duration-200 p-3"
+                duration={900}
+                // offset={-windowDimensions.navScrolled}
+                className="transition-all duration-200 p-3 relative before:content-[''] before:absolute before:bottom-1 before:left-0 before:h-[2px] before:w-0 before:rounded-md before:transition-all before:bg-accent hover:before:w-full"
               >
                 {item.name}
               </Link>
