@@ -119,7 +119,7 @@ export const brands = [
   },
   {
     img: FiverBrandIcon,
-    href: "",
+    href: "https://es.fiverr.com/fidelromano?public_mode=true",
   },
   {
     img: BehanceBrandIcon,
@@ -127,7 +127,7 @@ export const brands = [
   },
   {
     img: DribbbleBrandIcon,
-    href: "",
+    href: "https://dribbble.com/http_fido",
   },
 ];
 
