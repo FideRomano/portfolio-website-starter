@@ -9,7 +9,7 @@ const Project = ({ item }) => {
       data-aos="fade-up"
       data-aos-offset="100"
       data-aos-delay="100"
-      data-aos-duration="400"
+      data-aos-duration="600"
       data-aos-once="true">
       <div className="lg:max-w-[45%] border-x-4 border-y-[15px] border-gray-200 rounded-2xl cursor-pointer relative group">
         <a href={item.href} target="_blank" rel="noreferrer">
