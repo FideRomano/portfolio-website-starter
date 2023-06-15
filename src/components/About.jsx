@@ -10,7 +10,7 @@ const About = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-24">
           <img
-            className="object-cover h-full md:mx-auto md:h-1/2 md:w-1/2 lg:w-1/3 lg:mx-0 rounded-3xl bg-tertiary"
+            className="object-cover h-full md:mx-auto md:h-1/2 md:w-1/2 lg:w-1/3 border border-slate-400 lg:mx-0 rounded-3xl bg-tertiary"
             src={Image}
             alt=""
             data-aos="fade-up"
@@ -21,9 +21,8 @@ const About = () => {
             className="flex flex-col items-center text-center lg:items-start lg:text-left"
             data-aos="fade-zoom-in"
             data-aos-duration="800"
-            data-aos-delay="100"
+            data-aos-delay="200"
             data-aos-once="true"
-            data-aos-offset="200"
           >
             <div className="flex flex-col">
               <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before::opacity-40 xl:mt-[2.5rem] before:-top-[2rem] before:hidden before:lg:block">

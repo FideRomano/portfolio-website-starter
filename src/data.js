@@ -59,27 +59,19 @@ export const navigation = [
     href: "home",
   },
   {
-    name: "about",
+    name: "Sobre mi",
     href: "about",
   },
   {
-    name: "skills",
+    name: "habilidades",
     href: "skills",
   },
   {
     name: "portfolio",
     href: "portfolio",
   },
-  // {
-  //   name: "services",
-  //   href: "services",
-  // },
-  // {
-  //   name: "testimonials",
-  //   href: "testimonials",
-  // },
   {
-    name: "contact",
+    name: "contacto",
     href: "contact",
   },
 ];
@@ -101,10 +93,6 @@ export const social = [
     icon: <FiInstagram />,
     href: "https://www.instagram.com/http_fido/",
   },
-  // {
-  //   icon: <FiDribbble />,
-  //   href: '',
-  // },
 ];
 
 // companies

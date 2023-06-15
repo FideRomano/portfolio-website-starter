@@ -38,7 +38,7 @@ const Skills = () => {
     >
       <div className="container mx-auto ">
         <h1 className="text-3xl lg:text-4xl font-medium lg:font-extrabold my-10 ">
-          Skills
+          Habilidades
         </h1>
         <SkillList title="Front end" skills={skillsFront} />
         <SkillList title="Back end" skills={skillsBack} />
