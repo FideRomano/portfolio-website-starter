@@ -46,6 +46,7 @@ import SkillImg17 from "./assets/img/skills/firebase.png";
 import SkillImg18 from "./assets/img/skills/ai.png";
 import SkillImg19 from "./assets/img/skills/ps.png";
 import SkillImg20 from "./assets/img/skills/nextjs.png";
+import SkillImg21 from "./assets/img/skills/vue.png";
 
 // testimonial images
 import TestiImage1 from "./assets/img/testimonials/testimonial-1.webp";
@@ -248,6 +249,12 @@ export const skillsFront = [
     name: "Next JS",
     type: "front",
     href: "https://nextjs.org/"
+  },
+  {
+    image: SkillImg21,
+    name: "Vue JS",
+    type: "front",
+    href: "https://vuejs.org/"
   },
   {
     image: SkillImg11,
