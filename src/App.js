@@ -28,6 +28,9 @@ const App = () => {
       setShowContent(false);
       // openModal();
     };
+    document.addEventListener("keyup", handleScreenCapture);
+    document.addEventListener("copy", handleScreenCapture);
+    document.addEventListener("paste", handleScreenCapture);
     document.addEventListener("visibilitychange", () => {
       if (document.visibilityState === "hidden") {
         setShowContent(false);
@@ -41,9 +44,6 @@ const App = () => {
     window.addEventListener("focus", () => {
       setShowContent(true);
     });
-    document.addEventListener("keyup", handleScreenCapture);
-    document.addEventListener("copy", handleScreenCapture);
-    document.addEventListener("paste", handleScreenCapture);
 
     return () => {
       document.removeEventListener("keyup", handleScreenCapture);
