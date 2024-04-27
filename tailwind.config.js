@@ -50,8 +50,8 @@ module.exports = {
             DEFAULT: "#0d0c22",
             hover: "#4b4a64",
           },
-          paragraph: "#1C1D24",
-          shadow: "#d9d4ca",
+          paragraph: "grey",
+          shadow: "#bab3a5",
         },
         // light: {
         //   primary: "#fffdf8",

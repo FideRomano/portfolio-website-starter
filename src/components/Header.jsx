@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-// import components
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import Socials from "./Socials";
 import { windowDimensions } from "./WindowsDimentions";
-import Logo from "../assets/img/isotipo-httpfido-blanco-sin-fondo.svg";
-
+import Logo from "../components/SVGs/Logo";
+import { useThemeContext } from "../context/themeContext";
 const Header = () => {
+  const { theme } = useThemeContext();
   const [bg, setBg] = useState(false);
   const scrolled = windowDimensions.navScrolled;
   const nav = windowDimensions.navHeight;
@@ -26,10 +26,13 @@ const Header = () => {
     >
       <div className="container mx-auto h-full flex items-center justify-between">
         <a href="/">
-          <img src={Logo} alt="" className="h-10 lg:h-11" />
+          <Logo
+            className="h-10 lg:h-11 transition-all duration-100"
+            theme={theme}
+          />
         </a>
         <div className="hidden lg:block">
-          <Nav />
+          <Nav bg={bg} theme={theme} />
         </div>
         <div className="hidden lg:block">
           <Socials />

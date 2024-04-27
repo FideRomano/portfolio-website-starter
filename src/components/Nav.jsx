@@ -4,14 +4,16 @@ import { navigation } from "../data";
 // import link
 import { Link } from "react-scroll";
 
-const Nav = () => {
+const Nav = ({ bg, theme }) => {
   return (
     <nav>
       <ul className="flex space-x-4 capitalize text-[15px]">
         {navigation.map((item, index) => {
           return (
             <li
-              className="text-accent hover:text-accent-hover cursor-pointer "
+              className={`${
+                bg && theme === "light" ? "text-white" : "text-accent"
+              } hover:text-accent-hover cursor-pointer`}
               key={index}
             >
               <Link
@@ -28,7 +30,9 @@ const Nav = () => {
           );
         })}
         <a
-          className="text-accent hover:text-accent cursor-pointer transition-all duration-200 px-3"
+          className={`${
+            bg && theme === "light" ? "text-white" : "text-accent"
+          } hover:text-accent cursor-pointer transition-all duration-200 px-3`}
           href="https://docs.google.com/document/d/12aM-wGNlq6KT7L12TKPwU5KuFaAnRRgTp-H6-DTox_k/edit?usp=sharing"
           target="_blank"
           rel="noreferrer"
