@@ -21,7 +21,7 @@ const Header = () => {
     <header
       style={bg ? { minHeight: `${scrolled}px` } : { minHeight: `${nav}px` }}
       className={`${
-        bg ? "bg-tertiary" : "bg-none"
+        bg ? "bg-shadow" : "bg-none"
       } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
