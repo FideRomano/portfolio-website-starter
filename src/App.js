@@ -15,13 +15,13 @@ const App = () => {
   const [showContent, setShowContent] = useState(true);
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
+  // const openModal = () => {
+  //   setModalIsOpen(true);
+  // };
 
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
+  // const closeModal = () => {
+  //   setModalIsOpen(false);
+  // };
   useEffect(() => {
     const handleScreenCapture = (event) => {
       event.preventDefault();
@@ -69,13 +69,17 @@ const App = () => {
           style={{ backgroundColor: "black", height: "100vh", width: "100vw" }}
         >
           <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={closeModal}
+            // isOpen={modalIsOpen}
+            // onRequestClose={closeModal}
             contentLabel="Example Modal"
           >
             <h2>Modal Title</h2>
             <p>This is the modal content.</p>
-            <button onClick={closeModal}>Close Modal</button>
+            <button
+            // onClick={closeModal}
+            >
+              Close Modal
+            </button>
           </Modal>
         </div>
       )}
