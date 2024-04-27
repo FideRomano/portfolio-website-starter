@@ -1,25 +1,27 @@
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
+
   theme: {
     duration: {
-      '400': '400ms',
+      400: "400ms",
     },
     extend: {},
     fontFamily: {
-      primary: 'Playfair Display',
-      body: 'Work Sans',
+      primary: "Playfair Display",
+      body: "Work Sans",
     },
     container: {
       padding: {
-        DEFAULT: '1rem',
-        lg: '1.5rem',
+        DEFAULT: "1rem",
+        lg: "1.5rem",
       },
     },
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
     },
     extend: {
       content: {
@@ -30,14 +32,26 @@ module.exports = {
         contact: 'url("/src/assets/img/outline-text/contact.svg")',
       },
       colors: {
-        primary: '#080703f6',
-        secondary: '#1C1D24',
-        tertiary: '#131419',
-        accent: {
-          DEFAULT: '#c2793c',
-          hover: '#925a2b',
+        dark: {
+          primary: "#080703f6",
+          secondary: "#1C1D24",
+          tertiary: "#131419",
+          accent: {
+            DEFAULT: "#c2793c",
+            hover: "#925a2b",
+          },
+          paragraph: "#878e99",
         },
-        paragraph: '#878e99',
+        light: {
+          primary: "#fffdf8",
+          secondary: "grey",
+          tertiary: "#9198b1",
+          accent: {
+            DEFAULT: "#0d0c22",
+            hover: "#4b4a64",
+          },
+          paragraph: "#9198b1",
+        },
       },
     },
   },
