@@ -33,7 +33,8 @@ const Nav = ({ bg, theme }) => {
           className={`${
             bg && theme === "light" ? "text-white" : "text-accent"
           } hover:text-accent cursor-pointer transition-all duration-200 px-3`}
-          href="https://docs.google.com/document/d/12aM-wGNlq6KT7L12TKPwU5KuFaAnRRgTp-H6-DTox_k/edit?usp=sharing"
+          href="./Curriculum Vitae - Fidel Romano.pdf"
+          download
           target="_blank"
           rel="noreferrer"
         >
