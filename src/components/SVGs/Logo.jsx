@@ -1,7 +1,7 @@
 import React from "react";
 
-function Logo({ className, theme }) {
-  const fill = theme === "dark" ? "#ffff" : "#0d0c22";
+function Logo({ className, theme, bg }) {
+  const fill = theme !== "dark" && !bg ? "#0d0c22" : "#ffff";
   console.log({ fill });
   return (
     <svg

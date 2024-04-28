@@ -29,6 +29,7 @@ const Header = () => {
           <Logo
             className="h-10 lg:h-11 transition-all duration-100"
             theme={theme}
+            bg={bg}
           />
         </a>
         <div className="hidden lg:block">
