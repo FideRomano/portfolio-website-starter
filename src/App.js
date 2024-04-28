@@ -9,8 +9,6 @@ import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Modal from "react-modal";
-Modal.setAppElement("#root");
 const App = () => {
   const [showContent, setShowContent] = useState(true);
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -67,21 +65,7 @@ const App = () => {
       ) : (
         <div
           style={{ backgroundColor: "black", height: "100vh", width: "100vw" }}
-        >
-          <Modal
-            // isOpen={modalIsOpen}
-            // onRequestClose={closeModal}
-            contentLabel="Example Modal"
-          >
-            <h2>Modal Title</h2>
-            <p>This is the modal content.</p>
-            <button
-            // onClick={closeModal}
-            >
-              Close Modal
-            </button>
-          </Modal>
-        </div>
+        ></div>
       )}
     </>
   );
