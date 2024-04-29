@@ -30,7 +30,7 @@ const Socials = () => {
       {social.map((item, index) => {
         return (
           <li
-            className="flex justify-center items-center text-gray-100 w-12 lg:w-auto h-12 lg:text-accent dark:lg:text-dark-accent border lg:border-none rounded"
+            className="flex justify-center items-center text-gray-100 w-12 lg:w-auto h-12 lg:text-accent dark:lg:text-dark-accent border lg:border-none rounded transition-all duration-100"
             key={index}
           >
             <a
