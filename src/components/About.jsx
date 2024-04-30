@@ -6,11 +6,14 @@ import { Link } from "react-scroll";
 
 const About = () => {
   return (
-    <section className="section bg-secondary flex items-center min-h-screen" id="about">
+    <section
+      className="section bg-secondary flex items-center min-h-screen"
+      id="about"
+    >
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-24">
           <img
-            className="object-cover h-full md:mx-auto md:h-1/2 md:w-1/2 lg:w-1/3 border border-slate-400 lg:mx-0 rounded-3xl bg-tertiary"
+            className="object-cover h-full md:mx-auto md:h-1/2 md:w-1/2 lg:w-1/3 lg:mx-0 rounded-3xl dark:bg-dark-tertiary"
             src={Image}
             alt=""
             data-aos="fade-up"
@@ -31,15 +34,16 @@ const About = () => {
               <p className="mb-4 text-accent">Freelance Web Developer</p>
               <hr className="mb-8 opacity-5" />
               <p className="mb-8">
-                Soy Desarrollador de Software Full Stack con experiencia en la creación de
-                aplicaciones web eficientes y escalables, desarrolladas en el stack PERN. Trabajo
-                con React, Redux, PostgreSQL, Express, Node js, HTML, CSS, Express, JavaScript y
+                Soy Desarrollador de Software Full Stack con experiencia en la
+                creación de aplicaciones web eficientes y escalables,
+                desarrolladas en el stack PERN. Trabajo con React, Redux,
+                PostgreSQL, Express, Node js, HTML, CSS, Express, JavaScript y
                 Sequelize.
                 <br />
                 <br />
-                Cuento con cualidades de trabajo en equipo y de comunicación efectiva, apoyandome en
-                el uso de metodologias agiles, lo cual me convierte en un profesional organizado y
-                eficaz.
+                Cuento con cualidades de trabajo en equipo y de comunicación
+                efectiva, apoyandome en el uso de metodologias agiles, lo cual
+                me convierte en un profesional organizado y eficaz.
               </p>
             </div>
             <Link

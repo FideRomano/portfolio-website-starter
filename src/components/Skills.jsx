@@ -4,11 +4,13 @@ import React from "react";
 import { skillsFront, skillsBack, skillsOther } from "../data";
 
 const SkillList = ({ title, skills }) => (
-  <div className="rounded-lg bg-secondary mb-10 pt-1 pb-4" data-aos="fade-up"
-  data-aos-offset="200"
-  data-aos-delay="100"
-  data-aos-duration="800"
-  data-aos-once="true"
+  <div
+    className="rounded-lg bg-secondary mb-10 pt-1 pb-4"
+    data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="800"
+    data-aos-once="true"
   >
     <h1 className="text-lg ml-5 mb-3">{title}</h1>
     <div className="lg:px-10 grid grid-cols-8 md:grid-flow-row">
@@ -33,7 +35,7 @@ const SkillList = ({ title, skills }) => (
 const Skills = () => {
   return (
     <section
-    className="bg-tertiary flex items-center min-h-screen pb-12"
+      className="dark:bg-dark-tertiary bg-primary flex items-center min-h-screen pb-12"
       id="skills"
     >
       <div className="container mx-auto ">
@@ -45,7 +47,7 @@ const Skills = () => {
         <SkillList
           title="Programming Languages &amp; tools"
           skills={skillsOther}
-          />
+        />
       </div>
     </section>
   );

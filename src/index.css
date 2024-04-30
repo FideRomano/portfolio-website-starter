@@ -3,16 +3,78 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply font-body text-paragraph leading-6 bg-gray-200;
+  body.dark {
+    @apply font-body text-dark-paragraph leading-6 bg-gray-200;
+
+    .bg-primary {
+      @apply bg-dark-primary;
+    }
+    .bg-secondary {
+      @apply bg-dark-secondary;
+    }
+    .bg-tertiary {
+      @apply bg-dark-tertiary;
+    }
+    .bg-accent {
+      @apply bg-dark-accent;
+    }
+    .bg-accent-hover {
+      @apply bg-dark-accent-hover;
+    }
+    .bg-shadow {
+      @apply bg-dark-tertiary;
+    }
+    .text-primary {
+      @apply text-dark-primary;
+    }
+    .text-secondary {
+      @apply text-dark-secondary;
+    }
+    .text-tertiary {
+      @apply text-dark-tertiary;
+    }
+    .text-accent {
+      @apply text-dark-accent;
+    }
+    .text-accent-hover {
+      @apply text-dark-accent-hover;
+    }
+    .subtitle {
+      @apply text-dark-paragraph;
+    }
+    .input {
+      @apply text-dark-paragraph focus:outline-dark-accent bg-dark-secondary;
+    }
+    .textarea {
+      @apply bg-dark-secondary focus:outline-dark-accent;
+    }
+    .active {
+      @apply text-dark-accent;
+    }
+    .btn {
+      @apply hover:bg-dark-accent-hover;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply text-white font-primary;
+    }
   }
+  body {
+    @apply font-body text-light-paragraph leading-6 bg-gray-200;
+  }
+
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    @apply text-white font-primary;
+    @apply text-light-accent font-primary;
   }
   .section {
     @apply py-12 lg:py-32;
@@ -21,10 +83,10 @@
     @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5;
   }
   .subtitle {
-    @apply text-base text-paragraph mb-16 lg:mb-24 max-w-[520px];
+    @apply text-light-paragraph text-base mb-16 lg:mb-24 max-w-[520px];
   }
   .btn {
-    @apply py-4 px-7 font-medium text-white flex items-center justify-center rounded-sm hover:bg-accent-hover transition-all;
+    @apply py-4 px-7 font-medium text-white flex items-center justify-center rounded-sm hover:bg-light-accent-hover transition-all;
   }
   .btn-lg {
     @apply h-[54px];
@@ -33,12 +95,45 @@
     @apply h-[48px];
   }
   .input {
-    @apply bg-secondary text-paragraph h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-1 focus:outline-accent;
+    @apply text-light-secondary placeholder-light-paragraph bg-light-shadow h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-1 focus:outline-light-accent;
   }
   .textarea {
-    @apply bg-secondary resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1 focus:outline-accent;
+    @apply bg-light-shadow placeholder-light-paragraph resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1 focus:outline-light-accent;
   }
   .active {
-    @apply text-accent;
+    @apply text-light-accent;
+  }
+  .bg-primary {
+    @apply bg-light-primary;
+  }
+  .bg-secondary {
+    @apply bg-light-secondary;
+  }
+  .bg-tertiary {
+    @apply bg-light-tertiary;
+  }
+  .bg-accent {
+    @apply bg-light-accent;
+  }
+  .bg-accent-hover {
+    @apply bg-light-accent-hover;
+  }
+  .bg-shadow {
+    @apply bg-light-shadow;
+  }
+  .text-primary {
+    @apply text-light-primary;
+  }
+  .text-secondary {
+    @apply text-light-secondary;
+  }
+  .text-tertiary {
+    @apply text-light-tertiary;
+  }
+  .text-accent {
+    @apply text-light-accent;
+  }
+  .text-accent-hover {
+    @apply text-light-accent-hover;
   }
 }
