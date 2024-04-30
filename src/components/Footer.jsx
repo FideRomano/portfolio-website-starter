@@ -11,7 +11,7 @@ import { ImWhatsapp } from "react-icons/im";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary dark:bg-tertiary">
+    <footer className="bg-dark-tertiary ">
       <div className="container mx-auto">
         <div className=" flex flex-col lg:flex-row mx-auto space-y-6 lg:space-y-0 items-center justify-between py-12">
           {/* <div className="flex flex-col md:flex-row w-full justify-center md:justify-between border"> */}

@@ -43,8 +43,8 @@ module.exports = {
           paragraph: "#878e99",
         },
         light: {
-          primary: "#fff9eb",
-          secondary: "#131419",
+          primary: "#FEF9F1",
+          secondary: "#f0e8da",
           tertiary: "#0d0c22",
           accent: {
             DEFAULT: "#0d0c22",
