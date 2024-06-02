@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 const About = () => {
   return (
     <section
-      className="section bg-secondary flex items-center min-h-screen"
+      className="dark:bg-dark-tertiary section flex items-center min-h-screen"
       id="about"
     >
       <div className="container mx-auto">

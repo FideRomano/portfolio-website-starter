@@ -5,7 +5,7 @@ import { skillsFront, skillsBack, skillsOther } from "../data";
 
 const SkillList = ({ title, skills }) => (
   <div
-    className="rounded-lg bg-secondary mb-10 pt-1 pb-4"
+    className="rounded-lg bg-light-secondary dark:bg-dark-secondary mb-10 pt-1 pb-4"
     data-aos="fade-up"
     data-aos-offset="200"
     data-aos-delay="100"
@@ -35,7 +35,7 @@ const SkillList = ({ title, skills }) => (
 const Skills = () => {
   return (
     <section
-      className="dark:bg-dark-tertiary bg-primary flex items-center min-h-screen pb-12"
+      className="dark:bg-dark-tertiary bg-light-primary flex items-center min-h-screen pb-12"
       id="skills"
     >
       <div className="container mx-auto ">
