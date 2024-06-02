@@ -12,7 +12,7 @@ const Socials = () => {
   };
   return (
     <ul className="flex space-x-6">
-      <ReactSwitch
+      {/* <ReactSwitch
         checked={checked}
         onChange={handleSwitchTheme}
         onColor="#925a2b"
@@ -26,7 +26,7 @@ const Socials = () => {
         width={40}
         className="react-switch"
         id="material-switch"
-      />
+      /> */}
       {social.map((item, index) => {
         return (
           <li

@@ -153,12 +153,13 @@ export const projectsData = [
     image: cesarini,
     name: "Cesarini Plataforma Educativa",
     category: "grupal",
-    description: "Lo que estás viendo :)",
+    description:
+      "Plataforma para uso académico que conecta a profesores y alumnos de nivel primario. La plataforma ofrece diferentes fichas interactivas que el alumno podrá completar y autoevaluarse posteriormente. El docente tiene acceso a un dashboard para administrar a sus alumnos y ver sus avances.",
     href: "https://fidel-portfolio-pink.vercel.app/",
     links: [
       {
         icon: <FiGithub />,
-        href: "https://github.com/httpfido/portfolio",
+        href: "https://github.com/httpfido/plataforma-educativa",
       },
       {
         icon: <FiLink />,
@@ -171,12 +172,13 @@ export const projectsData = [
     image: [nibbinyAbout, nibbinyFeed, nibbinyLibrary],
     name: "Nibbiny",
     category: "mobile",
-    description: "Lo que estás viendo :)",
+    description:
+      "Aplicación de lectura para smarthphone (android y iOS) donde el usuario puede leer y postear novelas (llamadas historias) e interactuar con ellas, likearlas, comentarlas, guardarlas en sus biblioteca y seguir a los creadores.",
     href: "https://fidel-portfolio-pink.vercel.app/",
     links: [
       {
         icon: <FiGithub />,
-        href: "https://github.com/httpfido/portfolio",
+        href: "https://github.com/DevLabsHQ/nibbiny-frontend",
       },
       {
         icon: <FiLink />,

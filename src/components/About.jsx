@@ -7,13 +7,13 @@ import { Link } from "react-scroll";
 const About = () => {
   return (
     <section
-      className="dark:bg-dark-tertiary section flex items-center min-h-screen"
+      className="dark:bg-dark-tertiary bg-white section flex items-center min-h-screen"
       id="about"
     >
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-24">
           <img
-            className="object-cover h-full md:mx-auto md:h-1/2 md:w-1/2 lg:w-1/3 lg:mx-0 rounded-3xl dark:bg-dark-tertiary"
+            className="object-cover h-full md:mx-auto md:h-1/2 md:w-1/2 lg:w-1/3 lg:mx-0 rounded-3xl dark:bg-dark-secondary bg-[#f3f2e7]"
             src={Image}
             alt=""
             data-aos="fade-up"
