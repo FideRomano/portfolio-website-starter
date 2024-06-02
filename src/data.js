@@ -25,6 +25,14 @@ import FlexAGENDA from "./assets/img/projects/p2.png";
 import movi from "./assets/img/projects/movi.png";
 import portfolio from "./assets/img/projects/portfolio.png";
 import loading from "./assets/img/projects/loading.jpg";
+import boldMobileRegister from "./assets/img/projects/BOLD-MOBILE-REGISTER.jpg";
+import boldMobileSplash from "./assets/img/projects/BOLD-MOBILE-SPLASH.jpg";
+import boldMobileSucces from "./assets/img/projects/BOLD-MOBILE-SUCCES.jpg";
+import cesarini from "./assets/img/projects/plataforma-educativa.jpg";
+import nibbinyAbout from "./assets/img/projects/NIBBINY-ABOUT.jpg";
+import nibbinyFeed from "./assets/img/projects/NIBBINY-FEED.jpg";
+import nibbinyLibrary from "./assets/img/projects/NIBBINY-LIBRARY.jpg";
+import arelana from "./assets/img/projects/arelana.png";
 
 // skills images
 import SkillImg1 from "./assets/img/skills/html5.png";
@@ -123,6 +131,78 @@ export const brands = [
 // projects
 export const projectsData = [
   {
+    id: "8",
+    image: arelana,
+    name: "Arelana",
+    category: "individual",
+    description: "Lo que estás viendo :)",
+    href: "https://fidel-portfolio-pink.vercel.app/",
+    links: [
+      {
+        icon: <FiGithub />,
+        href: "https://github.com/httpfido/portfolio",
+      },
+      {
+        icon: <FiLink />,
+        href: "https://fidel-portfolio-pink.vercel.app/",
+      },
+    ],
+  },
+  {
+    id: "7",
+    image: cesarini,
+    name: "Cesarini Plataforma Educativa",
+    category: "grupal",
+    description: "Lo que estás viendo :)",
+    href: "https://fidel-portfolio-pink.vercel.app/",
+    links: [
+      {
+        icon: <FiGithub />,
+        href: "https://github.com/httpfido/portfolio",
+      },
+      {
+        icon: <FiLink />,
+        href: "https://fidel-portfolio-pink.vercel.app/",
+      },
+    ],
+  },
+  {
+    id: "5",
+    image: [nibbinyAbout, nibbinyFeed, nibbinyLibrary],
+    name: "Nibbiny",
+    category: "mobile",
+    description: "Lo que estás viendo :)",
+    href: "https://fidel-portfolio-pink.vercel.app/",
+    links: [
+      {
+        icon: <FiGithub />,
+        href: "https://github.com/httpfido/portfolio",
+      },
+      {
+        icon: <FiLink />,
+        href: "https://fidel-portfolio-pink.vercel.app/",
+      },
+    ],
+  },
+  {
+    id: "6",
+    image: [boldMobileRegister, boldMobileSplash, boldMobileSucces],
+    name: "Bold Mobile",
+    category: "mobile",
+    description: "Lo que estás viendo :)",
+    href: "https://fidel-portfolio-pink.vercel.app/",
+    links: [
+      {
+        icon: <FiGithub />,
+        href: "https://github.com/httpfido/portfolio",
+      },
+      {
+        icon: <FiLink />,
+        href: "https://fidel-portfolio-pink.vercel.app/",
+      },
+    ],
+  },
+  {
     id: "1",
     image: movi,
     name: "Movi",
@@ -166,7 +246,7 @@ export const projectsData = [
     name: "FlexAGENDA",
     category: "grupal",
     description:
-    "FlexAGENDA es una agenda virtual para profesionales. Es un sitio web diseñado para la gestion de turnos y manejo de clientes.  Ofrece un calendario interactivo con filtros, borrado lógico, pasarela de pagos, autenticación, entre otras tecnologías de desarrollo web. NO APTO PARA MOBILE",
+      "FlexAGENDA es una agenda virtual para profesionales. Es un sitio web diseñado para la gestion de turnos y manejo de clientes.  Ofrece un calendario interactivo con filtros, borrado lógico, pasarela de pagos, autenticación, entre otras tecnologías de desarrollo web. NO APTO PARA MOBILE",
     href: "https://www.youtube.com/watch?v=i9h7lQ1n0Ts",
     links: [
       {
@@ -184,8 +264,7 @@ export const projectsData = [
     image: portfolio,
     name: "Mi portfolio",
     category: "branding",
-    description:
-    "Lo que estás viendo :)",
+    description: "Lo que estás viendo :)",
     href: "https://fidel-portfolio-pink.vercel.app/",
     links: [
       {
@@ -230,49 +309,49 @@ export const skillsFront = [
     image: SkillImg1,
     name: "HTML",
     type: "front",
-    href: "https://html.spec.whatwg.org/multipage/"
+    href: "https://html.spec.whatwg.org/multipage/",
   },
   {
     image: SkillImg2,
     name: "CSS",
     type: "front",
-    href: "https://www.w3schools.com/css/"
+    href: "https://www.w3schools.com/css/",
   },
   {
     image: SkillImg4,
     name: "React",
     type: "front",
-    href: "https://es.reactjs.org/"
+    href: "https://es.reactjs.org/",
   },
   {
     image: SkillImg20,
     name: "Next JS",
     type: "front",
-    href: "https://nextjs.org/"
+    href: "https://nextjs.org/",
   },
   {
     image: SkillImg21,
     name: "Vue JS",
     type: "front",
-    href: "https://vuejs.org/"
+    href: "https://vuejs.org/",
   },
   {
     image: SkillImg11,
     name: "TailwindCSS",
     type: "front",
-    href: "https://tailwindcss.com/"
+    href: "https://tailwindcss.com/",
   },
   {
     image: SkillImg15,
     name: "Redux",
     type: "front",
-    href: "https://redux.js.org/"
+    href: "https://redux.js.org/",
   },
   {
     image: SkillImg8,
     name: "Figma",
     type: "front",
-    href: "https://www.figma.com/"
+    href: "https://www.figma.com/",
   },
 ];
 
@@ -281,37 +360,37 @@ export const skillsBack = [
     image: SkillImg6,
     name: "Node JS",
     type: "back",
-    href: "https://nodejs.org/en"
+    href: "https://nodejs.org/en",
   },
   {
     image: SkillImg9,
     name: "Sequelize",
     type: "back",
-    href: "https://sequelize.org/"
+    href: "https://sequelize.org/",
   },
   {
     image: SkillImg10,
     name: "Express",
     type: "back",
-    href: "https://expressjs.com/es/"
+    href: "https://expressjs.com/es/",
   },
   {
     image: SkillImg12,
     name: "PostgreSQL",
     type: "back",
-    href: "https://www.postgresql.org/"
+    href: "https://www.postgresql.org/",
   },
   {
     image: SkillImg13,
     name: "SQLite",
     type: "back",
-    href: "https://sqlite.org/index.html"
+    href: "https://sqlite.org/index.html",
   },
   {
     image: SkillImg17,
     name: "Firebase",
     type: "back",
-    href: "https://firebase.google.com/?gclid=CjwKCAjwiOCgBhAgEiwAjv5whJsyc4xHCk_rKEJnSYU4uUnFNu7gArtSqn6K_UbAd8mT1WNmVAQ4rBoCHJQQAvD_BwE&gclsrc=aw.ds&hl=es-419"
+    href: "https://firebase.google.com/?gclid=CjwKCAjwiOCgBhAgEiwAjv5whJsyc4xHCk_rKEJnSYU4uUnFNu7gArtSqn6K_UbAd8mT1WNmVAQ4rBoCHJQQAvD_BwE&gclsrc=aw.ds&hl=es-419",
   },
 ];
 
@@ -320,37 +399,37 @@ export const skillsOther = [
     image: SkillImg3,
     name: "JavaScript",
     type: "other",
-    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
     image: SkillImg7,
     name: "Git",
     type: "other",
-    href: "https://git-scm.com/"
+    href: "https://git-scm.com/",
   },
   {
     image: SkillImg16,
     name: "TypeScript",
     type: "other",
-    href: "https://www.typescriptlang.org/"
+    href: "https://www.typescriptlang.org/",
   },
   {
     image: SkillImg14,
     name: "VSCode",
     type: "other",
-    href: "https://code.visualstudio.com/"
+    href: "https://code.visualstudio.com/",
   },
   {
     image: SkillImg18,
     name: "Illustrator",
     type: "other",
-    href: "https://www.adobe.com/ar/products/illustrator.html"
+    href: "https://www.adobe.com/ar/products/illustrator.html",
   },
   {
     image: SkillImg19,
     name: "Photoshop",
     type: "other",
-    href: "https://www.adobe.com/ar/products/photoshop.html"
+    href: "https://www.adobe.com/ar/products/photoshop.html",
   },
 ];
 
@@ -372,7 +451,7 @@ export const services = [
     icon: <FiPenTool />,
     name: "Branding",
     description:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
   },
   {
     icon: <FiTag />,

@@ -12,23 +12,46 @@ const Project = ({ item }) => {
       data-aos-duration="600"
       data-aos-once="true"
     >
-      <div className="lg:max-w-[45%] border-x-4 border-y-[15px] border-gray-200 rounded-2xl cursor-pointer relative group">
-        <a href={item.href} target="_blank" rel="noreferrer">
-          {item.description === "Proximamente" && <Hamster />}
-          <img
-            src={item.image}
-            alt=""
-            className={
-              item.description !== "Proximamente" &&
-              "transition-all duration-150 lg:group-hover:blur-sm lg:group-hover:opacity-60"
-            }
-          />
-          {item.description !== "Proximamente" && (
-            <h1 className="absolute opacity-0 lg:group-hover:opacity-100 transition-opacity duration-400 text-2xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              Ver demo
-            </h1>
-          )}
-        </a>
+      <div className="lg:w-[45%] flex justify-around">
+        {item.category === "mobile" && (
+          <>
+            {item.image.map((i) => (
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                className="h-[300px] flex border-x-4 border-y-[15px] border-gray-200 rounded-2xl"
+              >
+                <img src={i} alt="" />
+              </a>
+            ))}
+          </>
+        )}
+        {item.category !== "mobile" && (
+          <>
+            <a
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+              className={`${item.category === "mobile" && "h-[300px]"} flex border-x-4 border-y-[15px] border-gray-200 rounded-2xl cursor-pointer relative group `}
+            >
+              {item.description === "Proximamente" && <Hamster />}
+              <img
+                src={item.image}
+                alt=""
+                className={
+                  item.description !== "Proximamente" &&
+                  "transition-all duration-150 lg:group-hover:blur-sm lg:group-hover:opacity-60"
+                }
+              />
+              {item.description !== "Proximamente" && (
+                <h1 className="absolute opacity-0 lg:group-hover:opacity-100 transition-opacity duration-400 text-2xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  Ver demo
+                </h1>
+              )}
+            </a>
+          </>
+        )}
       </div>
 
       <div className="lg:w-[45%]">
