@@ -135,8 +135,9 @@ export const projectsData = [
     image: arelana,
     name: "Arelana",
     category: "individual",
-    description: "Lo que estás viendo :)",
-    href: "https://fidel-portfolio-pink.vercel.app/",
+    description:
+      "Arelana es una tienda virtual diseñadad y desarrollada a medida para un taller de alta joyeria en Barcelona.",
+    href: "https://arelana.com/",
     links: [
       {
         icon: <FiGithub />,
@@ -144,7 +145,7 @@ export const projectsData = [
       },
       {
         icon: <FiLink />,
-        href: "https://fidel-portfolio-pink.vercel.app/",
+        href: "https://arelana.com/",
       },
     ],
   },
@@ -161,10 +162,6 @@ export const projectsData = [
         icon: <FiGithub />,
         href: "https://github.com/httpfido/plataforma-educativa",
       },
-      {
-        icon: <FiLink />,
-        href: "https://fidel-portfolio-pink.vercel.app/",
-      },
     ],
   },
   {
@@ -174,15 +171,10 @@ export const projectsData = [
     category: "mobile",
     description:
       "Aplicación de lectura para smarthphone (android y iOS) donde el usuario puede leer y postear novelas (llamadas historias) e interactuar con ellas, likearlas, comentarlas, guardarlas en sus biblioteca y seguir a los creadores.",
-    href: "https://fidel-portfolio-pink.vercel.app/",
     links: [
       {
         icon: <FiGithub />,
         href: "https://github.com/DevLabsHQ/nibbiny-frontend",
-      },
-      {
-        icon: <FiLink />,
-        href: "https://fidel-portfolio-pink.vercel.app/",
       },
     ],
   },
@@ -192,15 +184,10 @@ export const projectsData = [
     name: "Bold Mobile",
     category: "mobile",
     description: "Lo que estás viendo :)",
-    href: "https://fidel-portfolio-pink.vercel.app/",
     links: [
       {
         icon: <FiGithub />,
         href: "https://github.com/httpfido/portfolio",
-      },
-      {
-        icon: <FiLink />,
-        href: "https://fidel-portfolio-pink.vercel.app/",
       },
     ],
   },

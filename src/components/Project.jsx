@@ -17,7 +17,7 @@ const Project = ({ item }) => {
           <>
             {item.image.map((i) => (
               <a
-                href={item.href}
+                href={item?.href}
                 target="_blank"
                 rel="noreferrer"
                 className="h-[300px] flex border-x-4 border-y-[15px] border-gray-200 rounded-2xl"
@@ -30,7 +30,7 @@ const Project = ({ item }) => {
         {item.category !== "mobile" && (
           <>
             <a
-              href={item.href}
+              href={item?.href}
               target="_blank"
               rel="noreferrer"
               className={`${item.category === "mobile" && "h-[300px]"} flex border-x-4 border-y-[15px] border-gray-200 rounded-2xl cursor-pointer relative group `}
