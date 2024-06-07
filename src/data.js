@@ -183,7 +183,8 @@ export const projectsData = [
     image: [boldMobileRegister, boldMobileSplash, boldMobileSucces],
     name: "Bold Mobile",
     category: "mobile",
-    description: "Lo que estás viendo :)",
+    description:
+      "Loyalty App para Bold Café, un Coffee Shop ubicado en Rosario - Santa Fe. Una Loyalty App es una aplicación destinada a fomentar la lealtad de los clientes hacia los negocios. En este caso, aplicamos features que fomentan el incentivo del cliente mediante un sistema de recompensas y gamificación.",
     links: [
       {
         icon: <FiGithub />,
