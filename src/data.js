@@ -72,12 +72,12 @@ export const navigation = [
     href: "about",
   },
   {
-    name: "habilidades",
-    href: "skills",
-  },
-  {
     name: "portfolio",
     href: "portfolio",
+  },
+  {
+    name: "habilidades",
+    href: "skills",
   },
   {
     name: "contacto",
